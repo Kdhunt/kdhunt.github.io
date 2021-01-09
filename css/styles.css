@@ -17,7 +17,6 @@
       position: inherit;
   }
   html{
-      background-color: var(--light-purple);
       height: 100%;
       position: relative;
   }
