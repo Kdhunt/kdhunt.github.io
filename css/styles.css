@@ -70,7 +70,7 @@
   footer a{
       color: var(--white);
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     body img{
         max-height: 200px;
         display: inline;
