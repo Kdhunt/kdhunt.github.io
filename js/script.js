@@ -1,6 +1,6 @@
 var current_date = new Date();
 console.log("Loading...");
-
+console.log(document.readyState);
 
 document.addEventListener("DOMContentLoaded", ()=>{
     console.log(document.readyState);
