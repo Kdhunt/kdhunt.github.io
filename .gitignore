@@ -1,0 +1,10 @@
+**/*.jpg
+**/*.png
+**/*.jpeg
+**/*.JPEG
+**/*.tiff
+**/*.gif
+**/*.svg
+**/*.webp
+!images/*.svg
+!images/*.webp

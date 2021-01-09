@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Source+Sans+Pro:wght@300;600&display=swap');
+
+:root {
+    --purple: #973eca;
+    --light-purple: #dbaaf7;
+    --white: #ffffff;
+    --black: #2d2d2d;
+
+    --base-font-size: 16px;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Hachi Maru Pop', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  *{
+      position: inherit;
+  }
+  html{
+      background-color: var(--light-purple);
+      height: 100%;
+      position: relative;
+  }
+  body{
+      max-width: 768px;
+      font-size: var(--base-font-size);
+      margin: 0 auto;
+      background-color: var(--white);
+      height: 100%;
+      padding: 20px 3em 0;
+  }
+  body > *{
+      margin: 0 16px;
+      padding: 20px;
+      min-height: 1vh;  
+  }
+  body img{
+      max-height: 200px;
+      display: inline-block;
+      position: absolute;
+      top: -30px;
+      right: 50px;
+      box-shadow:5px 5px 0px -1px var(--black);
+      border: 1px solid var(--black);
+  }
+  header{
+      background-color:purple;
+      font-family: 'Hachi Maru Pop', cursive;
+  }
+  h1{
+      color: var(--white)
+  }
+  p,span{
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  a{
+    color: var(--purple);
+  }
+  ul{
+      display: inline-block;
+      vertical-align: top;
+  }
+  main{
+    position: relative;
+  }
+  footer{
+    background-color:purple;
+    color: var(--white);
+    text-align: center;
+  }
+  footer a{
+      color: var(--white);
+  }
