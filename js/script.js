@@ -2,6 +2,7 @@ var current_date = new Date();
 
 
 document.addEventListener("DOMContentLoaded", ()=>{
+    console.log(document.readyState);
     if (document.readyState === "interactive" || document.readyState === "complete" ) {
         document.getElementById('copydt').innerText = current_date.getFullYear();
         document.getElementById('updatedt').innerText = 
