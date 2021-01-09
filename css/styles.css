@@ -70,3 +70,13 @@
   footer a{
       color: var(--white);
   }
+  @media only screen and (max-width: 600px) {
+    body img{
+        max-height: 200px;
+        display: inline;
+        position: static;
+
+        box-shadow:5px 5px 0px -1px var(--white);
+        border: 1px solid var(--black);
+    }
+  }
