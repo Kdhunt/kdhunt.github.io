@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         +":"+current_date.getMinutes()
         +":"+current_date.getSeconds()
         ;
-        document.getElementById('updatedt').innerText = current_date.now();
     }
 });
 
