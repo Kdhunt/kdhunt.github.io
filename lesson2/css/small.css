@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap');
+
+:root {
+    --main-color: #db2a1d;
+    --accent-1: #38383d;
+    --white: #ffffff;
+    --black: #2d2d2d;
+
+    --base-font-size: 16px;
+
+    /* padding */
+    --sm-padding: 4px;
+    --md-padding: 8px;
+    --lg-padding: 16px;
+
+    --wd-1: 344px;
+    --wd-2: 760px;
+    --wd-3: 1160px;
+
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* base elements */
+html {
+    background-color: var(--accent-1);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 var(--sm-padding);
+    background-color: var(--white);
+    border: none;
+}
+
+header {
+    margin: 0 -2vw;
+    padding-top: var(--sm-padding);
+    background-color: var(--main-color);
+    text-align: center;
+    padding-bottom: var(--sm-padding);
+    color:var(--white);
+}
+main{
+    padding: var(--sm-padding);
+}
+footer{
+    padding: var(--sm-padding);
+    text-align: center;
+    background-color: var(--black);
+    color:var(--white);
+    margin: 0 -2vw;
+}
+
+
+/* thirds element */
+.__thirds{
+  max-width: var(--wd-1);
+  display: grid;
+  grid-template-columns: 1fr ;
+  margin: 0 auto;
+  gap: calc(var(--sm-padding)+10px);
+  grid-auto-rows: minmax(100px, auto);
+}
+.__thirds .__third {
+    overflow: hidden;
+    border: 1px solid var(--accent-1);
+    max-width:var(--wd-1);
+    width: 100%;
+    border-radius: var(--sm-padding);
+}
+.__thirds .__third .title{
+    width: 100%;
+    background-color: var(--accent-1);
+    padding: var(--sm-padding);
+    color: var(--white);
+}
+.__thirds .__third .image-wrapper{
+    
+}
+.__thirds .__third .compay-name{
+    text-emphasis: filled double-circle blue;
+    margin: .5em 1em;
+}
+.__thirds .__third .compay-url{
+    margin: .5em 1em;
+}
+.__thirds .__third img{
+    width: 100%;
+    border-top: 1px solid var(--accent-1);
+}
+.__thirds .__third p{
+    margin: 0 1em;
+}

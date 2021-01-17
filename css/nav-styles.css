@@ -1,0 +1,111 @@
+header{background-color: white;}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+nav>ul>li{
+    position: relative;
+}
+nav ul li a {
+    display: block;
+    /*width: 60px;
+    min-width: 60px;*/
+    padding: 8px 8px 8px;
+    
+    color: #2d2d2d;
+    text-decoration: none;
+}
+nav > ul {
+    display: flex; 
+}
+nav ul li a:active{
+    border-bottom: 2px solid royalblue;
+}
+nav ul li a:hover{
+    /*color:rgb(94, 94, 94);*/
+    text-decoration: underline;
+}
+nav > ul > li > a {
+    border: 1px solid #2d2d2d;
+    border-right:none;
+}
+nav >ul>li:first-child a{
+    padding-left: 16px;
+
+}
+nav >ul>li:last-child a{
+    padding-right: 16px;
+    border-right:1px solid #2d2d2d;
+}
+
+nav>ul>li>ul{
+    display: none;        
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+}
+nav>ul>li:hover>ul{
+    display: block;
+}
+nav>ul>li>ul>li{
+    position: static;
+}
+nav>ul>li>ul>li>a{
+    background-color: purple;
+    color: white;
+    border:none;
+    
+}
+
+/* alternative methods */
+nav#nav_menu{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    display: flex; 
+}
+nav#nav_menu>*:first-child{padding-left: 16px;}
+nav#nav_menu>*:last-child{padding-right: 16px;}
+nav#nav_menu > .menu_group{
+    display: grid;
+    position: relative;
+}
+nav#nav_menu a{
+    padding: 8px 8px 8px;   
+    color: #2d2d2d;
+    text-decoration: none;
+}
+nav#nav_menu > .menu_group>.sub_menu{
+    position: absolute;
+    display:none;
+    top: 100%;
+}
+
+nav#nav_menu > .menu_group a.subnav{   
+    background-color: purple;
+    color: White;
+    border:none;
+    position: static;
+}
+nav#nav_menu > a, nav#nav_menu > .menu_group> a:first-child{
+    display: block;
+    border: 1px solid #2d2d2d;
+    border-right: none;
+}
+nav#nav_menu>.menu_group:last-child>a.topnav {
+    border-right: 1px solid #2d2d2d;
+    padding-right: 16px;
+
+}
+nav#nav_menu > a:hover, nav#nav_menu > .menu_group> a:first-child:hover{
+    /*color:rgb(94, 94, 94);*/
+    text-decoration: underline;
+
+}
+nav#nav_menu > .menu_group:hover > .sub_menu{
+    display: grid;
+    z-index: 1;
+}
