@@ -1,0 +1,31 @@
+@media only screen and (min-width: 70em) {
+  
+  body {
+    padding: 0 var(--lg-padding);
+  }
+  
+  header {
+    padding-top: var(--lg-padding);
+  }
+  main{
+    padding: var(--lg-padding);
+  }
+  footer{
+    padding: var(--lg-padding);
+  }
+  
+  
+  /* thirds element */
+  .__thirds{
+    max-width: var(--wd-3);
+  grid-template-columns: 1fr 1fr 1fr ;
+  }
+  .__thirds .__third {
+    max-width:var(--wd-1);
+    width: 100%;
+  }
+  .__thirds .__third .title{
+    padding: var(--lg-padding);
+  }
+  
+  }
