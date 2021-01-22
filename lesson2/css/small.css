@@ -77,7 +77,9 @@ footer{
     color: var(--white);
 }
 .__thirds .__third .image-wrapper{
-    
+    max-height: 1200px;
+    overflow: hidden;
+    margin-bottom: 2em;
 }
 .__thirds .__third .compay-name{
     text-emphasis: filled double-circle blue;
@@ -89,7 +91,7 @@ footer{
 .__thirds .__third img{
     width: 100%;
     border-top: 1px solid var(--accent-1);
-    max-height: 84em;
+
 }
 .__thirds .__third p{
     margin: 0 1em;
