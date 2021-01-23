@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&family=Quicksand:wght@300;700&display=swap');
 :root {
-    --main-color: #db2a1d;
-    --accent-1: #38383d;
-    --white: #ffffff;
+    --main-color: #3A8C92;
+    --accent-1: #EE6055;
+    --accent-2: #cfb400;
+    --white: #FFFBFC;
     --black: #2d2d2d;
-
+    --gray-dark: #30332E;
+    --gray-med: #696969;
+    --gray-light: #c7c7c9;
     --base-font-size: 16px;
 
     /* padding */
@@ -17,79 +19,96 @@
     --wd-2: 760px;
     --wd-3: 1160px;
 
+    --margin-sm: 12px;
+    --margin-md: 16px;
+    --margin-lg: 24px;
+
+    --font-heading: 'Noto Sans', sans-serif;
+    --font-body: 'Quicksand', sans-serif;
+
     box-sizing: border-box;
     font-family: 'Source Sans Pro', sans-serif;
+
 }
+
 /* base elements */
 html {
-    background-color: var(--accent-1);
+    background-color: var(--main-color);
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    padding: 0 var(--sm-padding);
-    background-color: var(--white);
+    padding: 0 0;
     border: none;
+    background-color: var(--white);
+    font-family: var(--font-body);
 }
 
 header {
-    margin: 0 -2vw;
+    margin: 0 0;
     padding-top: var(--sm-padding);
     background-color: var(--main-color);
     text-align: center;
-    padding-bottom: var(--sm-padding);
     color:var(--white);
+    font-family: var(--font-heading);
+    overflow: hidden;
 }
 main{
-    padding: var(--sm-padding);
+    padding: calc(var(--sm-padding) + 12px);
+
 }
 footer{
-    padding: var(--sm-padding);
+    padding: calc(var(--sm-padding) + 8px);
     text-align: center;
     background-color: var(--black);
     color:var(--white);
     margin: 0 -2vw;
+    font-family: var(--font-heading);
 }
-
-
-/* thirds element */
-.__thirds{
-  max-width: var(--wd-1);
-  display: grid;
-  grid-template-columns: 1fr ;
-  margin: 0 auto;
-  gap: calc(var(--sm-padding)+10px);
-  grid-auto-rows: minmax(100px, auto);
-}
-.__thirds .__third {
-    overflow: hidden;
-    border: 1px solid var(--accent-1);
-    max-width:var(--wd-1);
-    width: 100%;
-    border-radius: var(--sm-padding);
-}
-.__thirds .__third .title{
+h2{ color:var(--accent-1); font-size: 22px;}
+h3{ color:var(--accent-2); font-size: 18px;}
+p{font-size: 20px;}
+/* non ul nav */
+nav#nav_menu{
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    display: grid; 
     width: 100%;
     background-color: var(--accent-1);
-    padding: var(--sm-padding);
-    color: var(--white);
 }
-.__thirds .__third .image-wrapper{
-    
+nav#nav_menu>*:first-child{padding-left: 16px;}
+nav#nav_menu>*:last-child{padding-right: 16px;}
+nav#nav_menu a{
+    padding: 16px 8px;
+    font-size: 24px; 
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--accent-1);
 }
-.__thirds .__third .compay-name{
-    text-emphasis: filled double-circle blue;
-    margin: .5em 1em;
+nav#nav_menu a:hover{
+    color: var(--gray-dark);
+    background-color: var(--accent-2);
 }
-.__thirds .__third .compay-url{
-    margin: .5em 1em;
-}
-.__thirds .__third img{
+
+/* color-block */
+.color-block{
     width: 100%;
-    border-top: 1px solid var(--accent-1);
+    display: grid;
 }
-.__thirds .__third p{
-    margin: 0 1em;
+.color-block .__color{
+    padding: 20px;
+}
+.color-block .site-header{
+    background-color: var(--main-color);
+}
+.color-block .site-footer{
+    background-color: var(--gray-dark);
+}
+.color-block .accent1{
+    background-color: var(--accent-1);
+}
+.color-block .border{
+    background-color: var(--accent-2);
 }

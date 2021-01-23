@@ -26,8 +26,10 @@ var current_date = new Date();
 */
 
 document.onload = () => {
-    document.getElementById('copydt').innerText = current_date.getFullYear();
-    document.getElementById('updatedt').innerText = 
+    var current_date = new Date();
+    let copydt =  document.getElementById('copydt');
+    copydt.innerHTML = current_date.getFullYear();
+    document.getElementById('updatedt').innerHTML = 
     ("0" + current_date.getMonth()+1).slice(-2)
     +"/"+("0" + current_date.getDate()).slice(-2)
     +"/"+current_date.getFullYear()

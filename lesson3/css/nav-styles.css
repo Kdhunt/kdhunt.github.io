@@ -62,10 +62,11 @@ nav>ul>li>ul>li>a{
 
 /* alternative methods */
 nav#nav_menu{
-    margin: 0;
+    margin: 0 1em;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    display: flex; 
+    display: grid; 
+    width: 100%;
 }
 nav#nav_menu>*:first-child{padding-left: 16px;}
 nav#nav_menu>*:last-child{padding-right: 16px;}
@@ -75,7 +76,7 @@ nav#nav_menu > .menu_group{
 }
 nav#nav_menu a{
     padding: 8px 8px 8px;   
-    color: #2d2d2d;
+    color: #fff;
     text-decoration: none;
 }
 nav#nav_menu > .menu_group>.sub_menu{
@@ -92,7 +93,7 @@ nav#nav_menu > .menu_group a.subnav{
 }
 nav#nav_menu > a, nav#nav_menu > .menu_group> a:first-child{
     display: block;
-    border: 1px solid #2d2d2d;
+   /* border: 1px solid #2d2d2d;*/
     border-right: none;
 }
 nav#nav_menu>.menu_group:last-child>a.topnav {
