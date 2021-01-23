@@ -56,11 +56,11 @@ header {
     overflow: hidden;
 }
 main{
-    padding: calc(var(--sm-padding) + 12px);
+    padding: 16px;
 
 }
 footer{
-    padding: calc(var(--sm-padding) + 8px);
+    padding: 12px;
     text-align: center;
     background-color: var(--black);
     color:var(--white);
