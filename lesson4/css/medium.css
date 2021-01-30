@@ -28,9 +28,6 @@ nav ul li a {
   line-height: 1.2;
 }
 
-
-
-
 /* header */
 .header-wrapper{
     grid-template-columns: 85px auto ;
@@ -46,6 +43,11 @@ main .content-wrapper .content-block{
     margin: var(--margin-md) 0;
     padding:var(--md-padding) var(--gutter-md);
 }
+main, footer{
+  max-width: 768px;
+  margin: 0 auto;
+
+}
 /* Footer  */
 footer{
   display: grid;
@@ -59,7 +61,6 @@ footer{
 .footer-bar { grid-area: footer-bar; }
 .map { grid-area: map; }
 
-footer{max-width: 100%;}
 footer div{
   padding: 0 var(--gutter-md);
   margin: var(--margin-sm) 0;

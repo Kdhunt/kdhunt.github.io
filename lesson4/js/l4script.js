@@ -1,14 +1,15 @@
 var current_date = new Date();
+const days = ['Sunday','Monday','Tuesday', 'Wednesday', 'Thurssday', 'Friday', 'Saturday'];
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 let copydt = document.getElementById('copydt');
 copydt.innerText = current_date.getFullYear();
-let updatedt = document.getElementById('updatedt')
-updatedt.innerHTML =
-("0" + current_date.getMonth()+1).slice(-2)
-+"/"+("0" + current_date.getDate()).slice(-2)
-+"/"+current_date.getFullYear()
-+" "+current_date.getHours()
-+":"+current_date.getMinutes()
-+":"+current_date.getSeconds()
+// Wednesday, 24 January 2021
+let updatedt = document.getElementById('updatedt');
+updatedt.innerHTML = days[current_date.getDay()]+", "
++("0" + current_date.getDate()).slice(-2)+" "
++months[current_date.getMonth()]+" "
++current_date.getFullYear()
+
 ;
 
 document.getElementById("menu_toggle").addEventListener("click", ()=>{
