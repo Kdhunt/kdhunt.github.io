@@ -23,7 +23,6 @@ nav ul li{
     
 }
 nav ul li a {
-  padding: 0 var(--gutter-md);
   padding: 16px 8px;
   line-height: 1.2;
 }

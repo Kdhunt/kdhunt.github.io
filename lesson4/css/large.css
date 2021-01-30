@@ -4,9 +4,7 @@
         padding: 0 0 0 var(--gutter-lg);
       }
       h4{font-size: medium;}
-      nav ul li a {
-        padding: 0 var(--gutter-lg);
-      }
+  
       
       
       
@@ -23,13 +21,13 @@
       
       }
       /* Footer  */
-      /*footer{
+      footer{
         grid-template-columns: auto 1fr 1fr auto;
         grid-template-areas:
           "* content map *"
           "footer-bar footer-bar footer-bar footer-bar";
         padding: var(--lg-padding) 0;
-      }*/
+      }
       footer div{
         padding: 0 var(--gutter-lg);
         margin: var(--margin-lg) 0;
