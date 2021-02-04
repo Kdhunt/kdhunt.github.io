@@ -100,7 +100,7 @@ header {
 
 h1{ font-size: 24px; padding-bottom: 0px; margin-bottom: var(--margin-sm);}
 h2{ 
-    color:var(--accent-1); 
+    color:var(--accent-2); 
     font-size: 22px;
     padding: 0 0 0 var(--gutter-sm);
 }

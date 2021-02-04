@@ -88,7 +88,7 @@ nav#nav_menu a{
     background-color: var(--accent-1);
 }
 nav#nav_menu a:hover{
-    color: var(--gray-dark);
+    color: var(--white);
     background-color: var(--accent-2);
 }
 footer a{
