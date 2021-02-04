@@ -60,7 +60,7 @@ footer{
   display: grid;
   grid-template-columns: 1fr ;
   margin: 0 auto;
-  gap: calc(var(--sm-padding) + 10px);
+  gap: calc(16px);
   grid-auto-rows: minmax(100px, auto);
 }
 .__thirds .__third {
