@@ -155,7 +155,7 @@ nav ul li a:hover{
     display: grid;
     grid-template-columns: 85px auto 66px;
     text-align: left;
-
+    margin-bottom:var(--margin-sm);
 }
 
 .header-wrapper .logo{
@@ -165,7 +165,7 @@ nav ul li a:hover{
     font-style: italic;
     font-weight: 100;
     text-indent: var(--sm-padding);
-    color:var(--accent-2);
+    color:var(--gray-dark);
 }
 .header-wrapper .icon-menu{
     font-size: 40px;
