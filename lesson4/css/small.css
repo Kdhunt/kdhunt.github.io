@@ -165,7 +165,7 @@ nav ul li a:hover{
     font-style: italic;
     font-weight: 100;
     text-indent: var(--sm-padding);
-    color:var(--gray-dark);
+    color:var(--white);
 }
 .header-wrapper .icon-menu{
     font-size: 40px;
