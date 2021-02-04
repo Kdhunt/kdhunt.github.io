@@ -91,7 +91,9 @@ nav#nav_menu a:hover{
     color: var(--gray-dark);
     background-color: var(--accent-2);
 }
-
+footer a{
+    color: var(--white);
+}
 /* color-block */
 .color-block{
     width: 100%;
