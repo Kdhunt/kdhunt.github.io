@@ -202,6 +202,9 @@ footer{max-width: 100%;}
 footer .contact{
     padding-bottom: var(--md-padding);
 }
+footer a{
+    color: var(--white);
+}
 footer .contact div{
     margin: var(--margin-sm) 0;
 }

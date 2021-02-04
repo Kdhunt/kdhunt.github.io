@@ -205,6 +205,9 @@ footer .contact{
 footer .contact div{
     margin: var(--margin-sm) 0;
 }
+footer a{
+    color: var(--white);
+}
 footer .map iframe{
     max-width: 100%;
     margin-top: var(--margin-sm);
