@@ -72,3 +72,9 @@
       color: var(--white);
   }
  
+  @media only screen and (max-width: 32.5em) {
+  body img {position: static; 
+    top: 0px;
+    right: 0px;
+  }
+}

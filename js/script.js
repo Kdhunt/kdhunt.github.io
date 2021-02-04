@@ -25,7 +25,7 @@ var current_date = new Date();
 });
 */
 
-document.onload = () => {
+
     var current_date = new Date();
     let copydt =  document.getElementById('copydt');
     copydt.innerHTML = current_date.getFullYear();
@@ -37,4 +37,4 @@ document.onload = () => {
     +":"+current_date.getMinutes()
     +":"+current_date.getSeconds()
     ;
-}
+
