@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&family=Quicksand:wght@300;700&display=swap');
+/* the above import statement from google apparently causes an HTML validation error, but I got it directly from google and if I follow the suggested fix, it breaks my fonts from google.  So Im considering this an acceptable issue since its from a third party */
 @font-face {
     font-family: 'IcoMoon-Free';
     src: url('fonts/IcoMoon-Free.ttf') format('truetype');
