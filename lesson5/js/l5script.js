@@ -217,7 +217,7 @@ for(let i = 0;i<forcast.length;i++){
     var day_index = (current_date.getDay()+i % 6);
     forcast[i].querySelector('.day_abbrev').innerHTML = day_abbrev[day_index];
     forcast[i].querySelector('.day_icon').innerHTML = "<img src='http://openweathermap.org/img/wn/"+forcast_data.list[i].weather[0].icon+"@2x.png' />";
-    forcast[i].querySelector('.day_desc').innerHTML = forcast_data.list[i].weather[0].main;
+    forcast[i].querySelector('.day_desc').innerHTML = "High: "+parseInt(((forcast_data.list[i].main.temp_max - 273.15) * 9/5) + 32)+ "&deg;F";
 };
 
 
