@@ -292,3 +292,6 @@ footer .footer-bar{
   .weather_summary h3{
     color: var(--accent-1);
   }
+  iframe{
+      border:none;
+  }
