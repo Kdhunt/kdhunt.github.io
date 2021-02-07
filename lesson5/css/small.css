@@ -7,6 +7,7 @@
 }
 :root{
     --main-color: #2e6f74;
+    --xprimary: #2e6f7488;
     --accent-1: #e47c75;
     --xaccent-1: #e47c7555;
     --accent-2: #004688;
@@ -20,21 +21,21 @@
     --base-font-size: 16px;
 
     /* padding */
-    --sm-padding: 4px;
-    --md-padding: 8px;
-    --lg-padding: 16px;
+    --sm-padding: .25rem;
+    --md-padding: .5rem;
+    --lg-padding: 1rem;
 
-    --gutter-sm: 16px;
-    --gutter-md: 24px;
-    --gutter-lg: 32px;
+    --gutter-sm: 1rem;
+    --gutter-md: 1.5rem;
+    --gutter-lg: 2rem;
 
     --wd-1: 344px;
     --wd-2: 760px;
     --wd-3: 1160px;
 
-    --margin-sm: 8px;
-    --margin-md: 12px;
-    --margin-lg: 16px;
+    --margin-sm: .5rem;
+    --margin-md: .75rem;
+    --margin-lg: 1rem;
 
     --font-heading: 'Noto Sans', sans-serif;
     --font-body: 'Quicksand', sans-serif;
@@ -205,7 +206,7 @@ nav ul li a:hover{
 main{
     position:relative;
 }
-main .content-wrapper .content-block{
+.content-block{
     display: block;
     margin: var(--margin-sm) 0;
     padding:var(--sm-padding) var(--gutter-sm);

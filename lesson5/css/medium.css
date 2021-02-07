@@ -100,7 +100,19 @@ footer .footer-bar{
 .weather_summary h3{
   color: var(--accent-1);
 }
-.forcast , .map{
+.map{
   display: block;
+}
+.forcast{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.forcast .day_abbrev{
+  background-color: var(--xprimary);
+  color: var(--white);
+  padding: var(--md-padding) 2rem;
+  font-weight: 800;
 }
 }
