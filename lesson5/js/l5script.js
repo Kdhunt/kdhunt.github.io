@@ -15,3 +15,13 @@ updatedt.innerHTML = days[current_date.getDay()]+", "
 document.getElementById("menu_toggle").addEventListener("click", ()=>{
     document.getElementById("nav_menu").classList.toggle("menu_active");
 });
+
+
+    let banner = document.getElementsByClassName("banner_bar")[0];
+    if(current_date.getDay() == 6){
+        banner.style.display = "block";
+    }
+
+
+
+
