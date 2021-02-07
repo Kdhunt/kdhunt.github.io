@@ -250,12 +250,17 @@ footer .footer-bar{
     display: none;
 }
 .hero .hero_img{
-    width: 100%
+    width: 100%;
+    display:none;
 }
 .content-block.hero{
-    background-image: none;
+    display:block;
+    background-image: url('../images/placeimg_1000_400_nature.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 16rem;
     position: relative;
-  }
+}
 .weather_summary{
     width: 100%;
     display: flex;
@@ -274,3 +279,16 @@ footer .footer-bar{
 .weather_summary .weather_item .weather_item_value{
     padding-left: 1rem;
 }
+.weather_summary{
+    background-color: var(--xgray-dark);
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    padding: 0 1rem 1rem;
+    width: auto;
+    min-width: 12rem;
+    color: var(--white);
+  }
+  .weather_summary h3{
+    color: var(--accent-1);
+  }

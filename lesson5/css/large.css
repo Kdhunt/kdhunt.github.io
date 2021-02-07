@@ -22,10 +22,7 @@
       }
       /* Footer  */
       footer{
-        grid-template-columns: auto 1fr 1fr auto;
-        grid-template-areas:
-          "* content map *"
-          "footer-bar footer-bar footer-bar footer-bar";
+        grid-template-columns:  1fr 1fr ;
         padding: var(--lg-padding) 0;
       }
       footer div{
