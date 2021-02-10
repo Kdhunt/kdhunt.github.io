@@ -250,7 +250,7 @@ footer .footer-bar{
 .forcast , .map{
     display: none;
 }
-.hero .hero_img{
+main > .hero_img{
     width: 100%;
     display:none;
 }
