@@ -8,13 +8,13 @@
 <meta name="author" content="Krysta Hunt">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="preconnect" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="preconnect" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 <link rel="stylesheet" href="css/small.css">
 <link rel="stylesheet" href="css/medium.css">
 <link rel="stylesheet" href="css/large.css">
 
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link  rel="dns-prefetch" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="//fonts.gstatic.com">
+<link  rel="dns-prefetch" href="//fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -23,7 +23,7 @@
     
     <div class="header-wrapper">
     
-    <img src="images//weather-02-256.webp" class="logo" alt="Cloudy" />
+    <img src="images/weather-02-256.webp" class="logo" alt="Cloudy" />
 <div>
     <h1>With a Chance of Sun</h1>
     <div class="motto">bringing you a brighter day</div>
@@ -34,7 +34,7 @@
 <nav id="nav_menu">
     <ul >
         <li><a class="topnav" href="#">Home</a></li>
-        <li><a class="topnav current" aria-current="page" href="preston-5.html">Preston</a></li>
+        <li><a class="topnav current" aria-current="page" href="preston-6.html">Preston</a></li>
         <li><a class="topnav" href="#">Soda Springs</a></li>
         <li><a class="topnav" href="#">Fish Haven</a></li>
         <li><a class="topnav" href="#">Storm Center</a></li>
@@ -44,32 +44,46 @@
 
 <main>
     <h2>Preston Idaho</h2>
-    <div class="hero_img"><img src="images/placeimg_1000_400_nature.jpg" alt="Hero image"/></div>
+    <div class="hero_img">
+        <!--<img src="images/placeimg_1000_400_nature.jpg" alt="Hero image"/>-->
+        <img srcset="images/herosm1x.png 375w,
+        images/herosm2x.png 750w,
+             images/heromd.png 980w,images/herolg.png 1440w "
+             sizes=" 
+             (min-width: 980px) 1440px, 
+             (min-width: 750px) 980px,
+             (min-width: 375px) 750px,
+             100vw 
+            "
+     src="images/herolg.png"
+     alt="Sunshine in the rockies">
+    
     <section class="content-block hero">
         <div class="weather_summary">
             <h3>Weather Summary</h3>
             <div class="weather_item">
                 <div class="weather_item_label">Currently:</div>
-                <div class="weather_item_value">Sunnny</div>
+                <div class="weather_item_value weather_description">Sunny</div>
             </div>
             <div class="weather_item">
                 <div class="weather_item_label">High:</div>
-                <div class="weather_item_value">76 &deg;F</div>
+                <div class="weather_item_value "><span class="temperature">76</span> &deg;F</div>
             </div>
             <div class="weather_item">
                 <div class="weather_item_label">Wind Chill:</div>
-                <div class="weather_item_value">&deg;F</div>
+                <div class="weather_item_value "><span class="windchill"></span> &deg;F</div>
             </div>
             <div class="weather_item">
                 <div class="weather_item_label">Humidity:</div>
-                <div class="weather_item_value">79&#37;</div>
+                <div class="weather_item_value "><span class="humidity">69</span>&#37;</div>
             </div>
             <div class="weather_item">
                 <div class="weather_item_label">Wind Speed:</div>
-                <div class="weather_item_value">5 mph</div>
+                <div class="weather_item_value"><span class="wind_speed">5</span> mph</div>
             </div>
         </div>
     </section>
+</div>
     <div class="content-wrapper">
         <section class="content-block forcast">
             <div class="_day">
@@ -127,7 +141,7 @@
             <span class="icon icon-instagram"></span>
         </div>
     </div>
-    <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49723.57797988069!2d-111.89404229260977!3d42.09599287820826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1611670788045!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+    <div class="map"><iframe src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49723.57797988069!2d-111.89404229260977!3d42.09599287820826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1611670788045!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
 
     <div class="footer-bar text-small">
         &copy; <a href="//withachanceofsun.com">withachanceofsun.com</a>| <span>placeimg.com and openweathermap.org</span> | <span>Krysta D Hunt</span>
@@ -136,6 +150,6 @@
     </div>
     
 </footer>
-<script src="js/l5script.js" ></script>
+<script src="js/l6script.js" ></script>
 </body>
 </html>
