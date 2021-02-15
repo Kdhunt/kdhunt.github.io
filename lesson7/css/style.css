@@ -1,0 +1,12 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+picture img[data-src]{
+    filter: blur(3px);
+}
+picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
