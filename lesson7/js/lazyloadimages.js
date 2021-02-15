@@ -1,4 +1,4 @@
-const toLoad = document.querySelectorAll("picture img[data-src]");
+const toLoad = document.querySelectorAll("img[data-src]");
 
 let loadImages = (image) => {
     image.setAttribute('src', image.getAttribute('data-src'));

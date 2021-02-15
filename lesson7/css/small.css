@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&family=Quicksand:wght@300;700&display=swap');
+/* the above import statement from google apparently causes an HTML validation error, but I got it directly from google and if I follow the suggested fix, it breaks my fonts from google.  So Im considering this an acceptable issue since its from a third party */
+@font-face {
+    font-family: 'IcoMoon-Free';
+    src: url('fonts/IcoMoon-Free.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --main-color: #2e6f74;
+    --xprimary: #2e6f7488;
+    --accent-1: #e47c75;
+    --xaccent-1: #e47c7555;
+    --accent-2: #004688;
+    --xaccent-2: #00468855;
+    --white: #FFFBFC;
+    --black: #2d2d2d;
+    --gray-dark: #30332E;
+    --xgray-dark: #30332E88;
+    --gray-med: #696969;
+    --gray-light: #c7c7c9;
+    --base-font-size: 16px;
+
+    /* padding */
+    --sm-padding: .25rem;
+    --md-padding: .5rem;
+    --lg-padding: 1rem;
+
+    --gutter-sm: 1rem;
+    --gutter-md: 1.5rem;
+    --gutter-lg: 2rem;
+
+    --wd-1: 344px;
+    --wd-2: 760px;
+    --wd-3: 1160px;
+
+    --margin-sm: .5rem;
+    --margin-md: .75rem;
+    --margin-lg: 1rem;
+
+    --font-heading: 'Noto Sans', sans-serif;
+    --font-body: 'Quicksand', sans-serif;
+
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'IcoMoon-Free' !important; /* this important is directly from the icomoon library and is used purpousfully */
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+    /* Enable Ligatures ================ */
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* icons */
+.icon-envelop:before {
+    content: "\e945";
+}
+.icon-phone:before {
+    content: "\e942";
+}
+.icon-menu:before {
+    content: "\e9bd";
+}
+.icon-pinterest:before {
+    content: "\ead1";
+}
+.icon-twitter:before {
+    content: "\ea96";
+}
+.icon-facebook:before {
+    content: "\ea90";
+}
+.icon-whatsapp:before {
+    content: "\ea93";
+}
+.icon-instagram:before {
+    content: "\ea92";
+}
+/* base elements */
+html {
+    background-color: var(--main-color);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 0;
+    border: none;
+    background-color: var(--white);
+    font-family: var(--font-body);
+}
+
+header {
+    margin: 0 0;
+    padding-top: var(--sm-padding);
+    background-color: var(--main-color);
+    text-align: center;
+    color:var(--white);
+    font-family: var(--font-heading);
+    overflow: hidden;
+}
+
+
+h1{ font-size: 24px; padding-bottom: 0px; margin-bottom: var(--margin-sm);}
+h2{ 
+    color:var(--accent-2); 
+    font-size: 22px;
+    padding: 0 0 0 var(--gutter-sm);
+}
+h3{ 
+    color:var(--accent-2); 
+    font-size: 18px;
+}
+h4{ 
+    color:var(--accent-1); 
+    font-size: 14px;
+    margin-bottom:var(--margin-sm);
+    margin-top: var(--margin-sm);
+}
+p{font-size: 20px;}
+.text-small {
+    font-size: 12px;
+    font-weight: 100;
+}
+img{
+    width:100%;
+}
+/* ul nav..ug =,$ */
+nav{position:relative;}
+nav ul {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-heading);
+}
+nav ul li{
+    border-bottom: 1px solid var(--black);
+    border-top: 1px solid var(--white);
+    
+}
+nav ul li a {
+    display: block;
+    line-height: 44px;
+    color: var(--gray-dark);
+    text-decoration: none;
+    background-color:var(--accent-1);
+    text-align: center;
+}
+nav ul li a:hover{
+    color:var(--white);
+    background-color:var(--accent-2);
+}
+
+
+
+/* header */
+.header-wrapper{
+    display: grid;
+    grid-template-columns: 85px auto 66px;
+    text-align: left;
+    margin-bottom:var(--margin-sm);
+}
+
+.header-wrapper .logo{
+    width: 100%;
+}
+.header-wrapper .motto{
+    font-style: italic;
+    font-weight: 100;
+    text-indent: var(--sm-padding);
+    color:var(--white);
+}
+.header-wrapper .icon-menu{
+    font-size: 40px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+/* nav */
+#nav_menu{
+    display:none;
+}
+#nav_menu.menu_active{
+    display:block;
+}
+/* main */
+main{
+    position:relative;
+}
+.content-block{
+    display: block;
+    margin: var(--margin-sm) 0;
+    padding:var(--sm-padding) var(--gutter-sm);
+}
+/* Footer  */
+footer{
+    padding: var(--sm-padding) 0;
+    text-align: center;
+    background-color: var(--black);
+    color:var(--white);
+    font-family: var(--font-heading);
+}
+footer{max-width: 100%;}
+footer .contact{
+    padding-bottom: var(--md-padding);
+}
+footer a{
+    color: var(--white);
+}
+footer .contact div{
+    margin: var(--margin-sm) 0;
+}
+footer .map iframe{
+    max-width: 100%;
+    margin-top: var(--margin-sm);
+}
+footer .footer-bar{
+    margin: var(--margin-sm) 0;
+}
+/* Page Content */
+.banner_bar{
+    display: none;
+    background-color: var(--accent-1);
+    color:var(--black);
+    padding: 1rem;
+    font-weight: 600;
+
+}
+
+.forcast , .map{
+    display: none;
+}
+main > .hero_img{
+    width: 100%;
+  /*  display:none; */
+  position: relative
+}
+.content-block.hero{
+    display:block;
+   /* background-image: url('../images/placeimg_1000_400_nature.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 16rem;
+    position: relative;
+    position: absolute;
+    top: -1rem;
+}
+.weather_summary{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.weather_summary .weather_item{
+    padding:0;
+    margin:0;
+    display: flex;
+}
+.weather_summary .weather_item .weather_item_label{
+    width: 5    0%;
+    text-align: right;
+}
+.weather_summary .weather_item .weather_item_value{
+    padding-left: 1rem;
+}
+.weather_summary{
+    background-color: var(--xgray-dark);
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    padding: 0 1rem 1rem;
+    width: auto;
+    min-width: 12rem;
+    color: var(--white);
+  }
+  .weather_summary h3{
+    color: var(--accent-1);
+  }
+  iframe{
+      border:none;
+  }
