@@ -277,7 +277,7 @@ main > .hero_img{
     display: flex;
 }
 .weather_summary .weather_item .weather_item_label{
-    width: 5    0%;
+    width: 50%;
     text-align: right;
 }
 .weather_summary .weather_item .weather_item_value{

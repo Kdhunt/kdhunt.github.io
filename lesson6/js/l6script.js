@@ -220,16 +220,3 @@ for(let i = 0;i<forcast.length;i++){
     forcast[i].querySelector('.day_icon').innerHTML = "<img src='//openweathermap.org/img/wn/"+forcast_data.list[i].weather[0].icon+"@2x.png' alt='"+forcast_data.list[i].weather[0].description+"' />";
     forcast[i].querySelector('.day_desc').innerHTML = "High: "+parseInt(((forcast_data.list[i].main.temp_max - 273.15) * 9/5) + 32)+ "&deg;F";
 };
-
-
-//calculate Wind chill factor
-function calculate_windchill(temp, wind){
-   return (temp <= 50 && wind >= 3)?
-      35.74 + (0.6215 * temp) - (35.75 * Math.pow(wind,0.16)) 
-      + (0.4275 * temp * Math.pow(wind,0.16)):"n/a";
-}
-document.querySelector(".windchill").innerHTML = calculate_windchill(
-   document.querySelector(".temperature").nodeValue,
-   document.querySelector(".wind_speed").nodeValue,
-
-)
