@@ -36,4 +36,7 @@
       footer .footer-bar{
           margin: var(--margin-lg) 0;
       }
+      #gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+      }
 }

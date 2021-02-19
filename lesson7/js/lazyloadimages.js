@@ -17,7 +17,7 @@ if('IntersectionObserver' in window){
         });
     }, {
         threshhold: 1,
-        rootMargin: "0px 0px 200px 0px"
+        rootMargin: "0px 0px 20px 0px"
     });
 
     toLoad.forEach((image) => {
@@ -26,6 +26,6 @@ if('IntersectionObserver' in window){
 }
 else{
     toLoad.forEach((image) => {
-       // loadImages(image);
+        loadImages(image);
     });
 }
