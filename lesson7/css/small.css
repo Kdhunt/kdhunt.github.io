@@ -303,9 +303,11 @@ main > .hero_img{
     min-width: 300px;
     max-width: 450px;
     box-sizing: border-box;
-    box-shadow: 0px 0px 8px var(--gray-dark);
     display: block;
     margin:0;
+  }
+  figure:hover{
+    box-shadow: 0px 0px 8px var(--gray-dark);
   }
   figure figcaption{
     padding: 5px;
