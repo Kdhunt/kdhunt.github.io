@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+h2{
+    margin: 8px 0;
+}
+table{
+    font-family: Ubuntu, sans-serif;
+    max-width: 400px;
+    text-align: center;
+    border-width: 1px;
+    border-collapse: collapse;
+    box-shadow: 8px 8px 10px #628ca6;
+}
+table, th, td {
+    border: 1px solid #cccccc;
+  }
+thead td, tfoot td{
+    background-color: #7fb9c2;
+    color: #000000;
+}
+th{
+    background-color: #628ca6;
+    color: #ffffff;
+    padding: 6px 8px;
+}
+tr{
+    background-color: #e7f0ed ;
+    color: #000000;
+}
+tr:nth-child(odd){
+    background-color: #e7ffed;
+}
+tr:nth-child(5) td:last-child{
+    background-color: #628ca6;
+    color: #ffffff;
+}
+tr:nth-child(6) td:first-child{
+    font-style: italic;
+}
+tr td:not(:first-child)::before{
+    content: "$";
+}
+tbody td{
+    padding: 6px 8px;
+}
+tfoot td{
+    padding: 8px 0;
+    font-size: .75rem;
+}
+
+Use the CSS border property to define a border
+Use the CSS border-collapse property to collapse cell borders
+Use the CSS padding property to add padding to cells
+Use the CSS text-align property to align cell text
+Use the CSS border-spacing property to set the spacing between cells
