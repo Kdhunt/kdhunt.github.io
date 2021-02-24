@@ -25,7 +25,6 @@ thead td, tfoot td{
 th{
     background-color: #628ca6;
     color: #ffffff;
-    padding: 6px 8px;
 }
 tr{
     background-color: #e7f0ed ;
@@ -34,17 +33,11 @@ tr{
 tr:nth-child(odd){
     background-color: #e7ffed;
 }
-tr:nth-child(5) td:last-child{
+tr .they-wont-let-me-use-more-than-one-child-selector-so-im-using-this-class {
     background-color: #628ca6;
     color: #ffffff;
 }
-tr:nth-child(6) td:first-child{
-    font-style: italic;
-}
-tr td:not(:first-child)::before{
-    content: "$";
-}
-tbody td{
+tbody td, th{
     padding: 6px 8px;
 }
 tfoot td{
