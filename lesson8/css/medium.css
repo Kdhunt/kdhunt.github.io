@@ -101,4 +101,16 @@ footer .footer-bar{
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
+/* FORM */
+
+form, form fieldset{
+  max-width: 33rem;
+} 
+form label.top input, form label.top select{
+  max-width: 32.5rem;
+}
+form label.top textarea{
+  max-width: 32.5rem;
+  width: 96%;
+}
 }

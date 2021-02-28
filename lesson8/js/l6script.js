@@ -220,3 +220,13 @@ for(let i = 0;i<forcast.length;i++){
     forcast[i].querySelector('.day_icon').innerHTML = "<img src='//openweathermap.org/img/wn/"+forcast_data.list[i].weather[0].icon+"@2x.png' alt='"+forcast_data.list[i].weather[0].description+"' />";
     forcast[i].querySelector('.day_desc').innerHTML = "High: "+parseInt(((forcast_data.list[i].main.temp_max - 273.15) * 9/5) + 32)+ "&deg;F";
 };
+
+/* FORM SLIDER */
+var slider = document.querySelector("input[type=range]");
+var output = document.getElementById("severity_rangevalue");
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
