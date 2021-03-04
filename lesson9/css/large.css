@@ -39,7 +39,14 @@
       #gallery{
         grid-template-columns: 1fr 1fr 1fr;
       }
-      figure:hover{
+      figure{
         box-shadow: 0px 0px 8px var(--gray-dark);
       }
+/* FORM */
+      form label.sbs{
+        padding: .4rem 0;
+      }
+
+
+
 }
