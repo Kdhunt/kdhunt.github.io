@@ -371,7 +371,7 @@ main > .hero_img{
 
   form input.submitbutton{
     border: none;
-    background-color: var(--accent-1);
+    background-color: var(--accent-2);
     color: white;
     border-radius: 4px;
     padding: .75rem 1.5rem;
