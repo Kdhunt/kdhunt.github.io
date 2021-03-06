@@ -44,17 +44,18 @@
 </nav>
 
 <main>
-    <h2>Storm Center</h2>
+    <h2>Submit a Storm Report</h2>
     <form method="GET" action="thanks.html">
         
         <fieldset>
-            <legend>Submit a Storm Report</legend>
+            <legend>Your Information</legend>
             <label class="top">Full Name:* <input type="text" name="fullName" pattern="[a-zA-Z -.']{3,}" required ></label>
             <label class="top">Email: <input type="email" name="email" placeholder="email@domain.com" /></label>
             <label class="top">Phone Number:* <input type="tel" name="phone" required/></label>
             <label class="top">Zip Code:* <input type="number" name="zip" required/></label>
         </fieldset>
         <fieldset>
+            <legend>Storm Information</legend>
             <label class="top">Storm Date: <input type="date" name="stormDate" /></label>
             <label class="top">Storm Type: <input list="stormTypes" name="stormType" id="stormType" /></label>
             <datalist id="stormTypes">
@@ -109,7 +110,7 @@
                 </textarea>
             </label>
         </fieldset>
-            <label class="top"><input class="submitbutton" type="submit" value="Send my Storm Report" /></label>
+            <input class="submitbutton" type="submit" value="Send my Storm Report" />
         
     </form>
 </main>
