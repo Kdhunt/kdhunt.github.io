@@ -412,7 +412,9 @@ form label.top input{
     color: brown;
     font-size: 20px;
   }
-  
+  input.submitbutton{
+      font-weight: 800;
+  }
   label{
       display:block;
   }
