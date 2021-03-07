@@ -224,9 +224,12 @@ for(let i = 0;i<forcast.length;i++){
 /* FORM SLIDER */
 var slider = document.querySelector("input[type=range]");
 var output = document.getElementById("severity_rangevalue");
-output.innerHTML = slider.value; // Display the default slider value
+
 
 // Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-  output.innerHTML = this.value;
+if (typeof output !== 'undefined' && slider !== null){
+   output.innerHTML = slider.value; // Display the default slider value
+   slider.oninput = function() {
+   output.innerHTML = this.value;
+   }
 }

@@ -33,19 +33,20 @@
 </header>
 <nav id="nav_menu">
     <ul >
-        <li><a class="topnav current" aria-current="page" href="index.html">Home</a></li>
-        <li><a class="topnav"  href="preston.html">Preston</a></li>
-        <li><a class="topnav" href="soda-springs.html">Soda Springs</a></li>
-        <li><a class="topnav" href="fish-haven.html">Fish Haven</a></li>
-        <li><a class="topnav" href="stormcenter.html">Storm Center</a></li>
-        <li><a class="topnav" href="gallery.html">Gallery</a></li>
+        <li><a class="topnav" href="#">Home</a></li>
+        <li><a class="topnav current" aria-current="page" href="preston-6.html">Preston</a></li>
+        <li><a class="topnav" href="#">Soda Springs</a></li>
+        <li><a class="topnav" href="#">Fish Haven</a></li>
+        <li><a class="topnav" href="#">Storm Center</a></li>
+        <li><a class="topnav" href="#">Gallery</a></li>
     </ul>
 </nav>
 
-<main id="home">
+<main>
+    <h2>Preston Idaho</h2>
     <div class="hero_img">
-        <img src="images/placeimg_1000_400_nature.jpg" alt="Hero image"/>
-        <!--<img srcset="images/herosm1x.png 375w,
+        <!--<img src="images/placeimg_1000_400_nature.jpg" alt="Hero image"/>-->
+        <img srcset="images/herosm1x.png 375w,
         images/herosm2x.png 750w,
              images/heromd.png 980w,images/herolg.png 1440w "
              sizes=" 
@@ -55,42 +56,61 @@
              100vw 
             "
      src="images/herolg.png"
-     alt="Sunshine in the rockies">-->
+     alt="Sunshine in the rockies">
     
-        <section class="content-block hero">
-            <h2>Community Highlight</h2>
-            <p>Proin feugiat ex a ex porttitor volutpat. Maecenas rhoncus finibus felis. In tincidunt leo et suscipit commodo. Mauris commodo urna nec eros dignissim rutrum. Nullam mollis augue elit, et eleifend leo varius vel. Mauris lobortis eleifend neque, ac ultricies velit malesuada id. Pellentesque luctus vehicula lobortis.</p>
-            <p>Nam ornare ut ligula id vulputate. Mauris quis eros hendrerit, molestie ligula et, accumsan nisi. Fusce vitae luctus odio. Sed turpis lacus, euismod vel metus accumsan, euismod blandit mauris. Praesent non pulvinar mi. Suspendisse et ex tincidunt, egestas odio ut, elementum velit. Donec metus magna, vulputate vitae mi id, interdum ultrices est.</p>
-            <button class="cta">Learn More</button>
-        </section>
-    </div>
+    <section class="content-block hero">
+        <div class="weather_summary">
+            <h3>Weather Summary</h3>
+            <div class="weather_item">
+                <div class="weather_item_label">Currently:</div>
+                <div class="weather_item_value weather_description">Sunny</div>
+            </div>
+            <div class="weather_item">
+                <div class="weather_item_label">High:</div>
+                <div class="weather_item_value "><span class="temperature">76</span> &deg;F</div>
+            </div>
+            <div class="weather_item">
+                <div class="weather_item_label">Wind Chill:</div>
+                <div class="weather_item_value "><span class="windchill"></span> &deg;F</div>
+            </div>
+            <div class="weather_item">
+                <div class="weather_item_label">Humidity:</div>
+                <div class="weather_item_value "><span class="humidity">69</span>&#37;</div>
+            </div>
+            <div class="weather_item">
+                <div class="weather_item_label">Wind Speed:</div>
+                <div class="weather_item_value"><span class="wind_speed">5</span> mph</div>
+            </div>
+        </div>
+    </section>
+</div>
     <div class="content-wrapper">
-        <section class="content-block upcoming-events">
-            <h3>Upcoming Events</h3>
-        </section>
-        <section class="content-block town-cards">
-            <h3>Town Info</h3>
-            <div class="card">
-                <img src="" alt="" loading="lazy" />
-                <h2></h2>
-                <p></p>
-                <span class="learn-more-text"></span>
+        <section class="content-block forcast">
+            <div class="_day">
+                <div class="day_abbrev"></div>
+                <div class="day_icon"></div>
+                <div class="day_desc"></div>
             </div>
-            <div class="card">
-                <img src="" alt="" loading="lazy" />
-                <h2></h2>
-                <p></p>
-                <span class="learn-more-text"></span>
+            <div class="_day">
+                <div class="day_abbrev"></div>
+                <div class="day_icon"></div>
+                <div class="day_desc"></div>
             </div>
-            <div class="card">
-                <img src="" alt="" loading="lazy" />
-                <h2></h2>
-                <p></p>
-                <span class="learn-more-text"></span>
+            <div class="_day">
+                <div class="day_abbrev"></div>
+                <div class="day_icon"></div>
+                <div class="day_desc"></div>
             </div>
-        </section>
-        <section>
-            
+            <div class="_day">
+                <div class="day_abbrev"></div>
+                <div class="day_icon"></div>
+                <div class="day_desc"></div>
+            </div>
+            <div class="_day">
+                <div class="day_abbrev"></div>
+                <div class="day_icon"></div>
+                <div class="day_desc"></div>
+            </div>     
         </section>
         <article class="content-block article">
             <img src="images/placeimg_1000_400_sepia_nature.jpg" alt="Article Featured Image"/>
@@ -132,7 +152,6 @@
     </div>
     
 </footer>
-<script src="js/script.js" ></script>
-<script src="js/home-content.js" ></script>
+<script src="js/l6script.js" ></script>
 </body>
 </html>
