@@ -8,7 +8,6 @@ fetch(requestURL)
     const towns = jsonObject['towns'].filter(
         town => town.name.match(/^(Preston|Fish Haven|Soda Springs)$/)
     );
-    towns.sort();
     const events = []
     towns.forEach(town=>{
         town.events.forEach(event=>events.push(event))
@@ -23,7 +22,6 @@ fetch(requestURL)
             <p>Annual Rain Fall: ${town.averageRainfall} in.</p>
         </div>
         `
-        
         towncontainer.insertAdjacentHTML("beforeend", cardblock);
     });
     events.forEach(event=>{
