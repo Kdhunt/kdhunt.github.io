@@ -421,10 +421,10 @@ form label.top input{
 /* so wishing I could write this all in scss */
 #home{
     max-width: 100%;
-    min-width: 25rem;
 }
 #home .hero_img img{
     min-height: 27rem;
+    overflow-x: hidden;
 
 }
 #home .hero_img h2{

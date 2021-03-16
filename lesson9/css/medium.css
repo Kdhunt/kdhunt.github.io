@@ -50,7 +50,6 @@ main .content-wrapper .content-block{
     padding:var(--md-padding) var(--gutter-md);
 }
 main, footer{
-  max-width: 768px;
   margin: 0 auto;
 
 }
@@ -113,4 +112,25 @@ form label.top textarea{
   max-width: 32.5rem;
   width: 96%;
 }
+  .upcoming-events {
+    flex-direction: row;
+    padding: var(--gutter-md);
+  }
+  .community-event{
+    width: 33%;
+  }
+  section.content-block.hero {
+    max-width: 50%;
+    align-content: flex-end;
+  }
+  .card{
+    display: flex;
+    flex-direction: row;
+  }
+  .card:nth-child(even){
+      flex-direction: row-reverse;
+  }
+  .card img{
+    max-width: calc(50% - 1rem);
+  }
 }

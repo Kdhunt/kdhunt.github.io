@@ -16,7 +16,6 @@
           padding:var(--lg-padding) var(--gutter-lg);
       }
       main, footer{
-        max-width: 1024px;
         margin: 0 auto;
       
       }
@@ -47,6 +46,14 @@
         padding: .4rem 0;
       }
 
-
+      .town-cards{
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .card, .card:nth-child(even) {
+        flex-direction: column;
+      }
+      .card img{
+        max-width: calc(100% - 2rem);
+      }
 
 }

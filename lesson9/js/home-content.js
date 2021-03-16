@@ -16,11 +16,13 @@ fetch(requestURL)
         let cardblock = `
         <div class="card">
             <img src="images/${town.photo}" alt="${town.name} Idaho" loading="lazy" />
+            <div>
             <h2>${town.name}</h2>
-            <span>${town.motto}</span>
+            <p>${town.motto}</p>
             <p>Year Founded: ${town.yearFounded}</p>
             <p>Population: ${town.currentPopulation}</p>
             <p>Annual Rain Fall: ${town.averageRainfall} in.</p>
+            <div>
         </div>
         `
         

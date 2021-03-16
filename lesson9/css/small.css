@@ -421,7 +421,6 @@ form label.top input{
 /* so wishing I could write this all in scss */
 #home{
     max-width: 100%;
-    min-width: 25rem;
 }
 #home .hero_img img{
     min-height: 27rem;
@@ -450,5 +449,34 @@ form label.top input{
     margin-left: calc(100% - 150px);
 }
 .content-wrapper section{
-    
+    display: block;
+}
+.upcoming-events{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: initial;
+}
+.community-event {
+    padding: .25rem 0; 
+}
+.town-cards{
+    background-color: var(--gray-light);
+    padding-top:var(--margin-md);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+}
+.card img{
+    margin: 0 1rem;
+    max-width: calc(100% - 2rem);
+}
+.card>div{
+    padding: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 auto;
 }
