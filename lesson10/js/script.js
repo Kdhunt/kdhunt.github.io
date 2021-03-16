@@ -33,7 +33,11 @@ fetch(weatherApiURL)
   document.querySelector('.weather_item_value .temperature').innerHTML = jsObject.main.temp_max;
   document.querySelector('.weather_item_value .humidity').innerHTML = jsObject.main.humidity;
   document.querySelector('.weather_item_value .wind_speed').innerHTML = jsObject.wind.speed;
-  
+  document.querySelector(".windchill").innerHTML = calculate_windchill(
+    jsObject.main.temp,
+    jsObject.wind.speed
+ 
+ )
 
 });
 const forcastApiUrl = `//api.openweathermap.org/data/2.5/forecast?id=${citycode}&appid=597b2c47ecaa36d899d4e4fffd3c3470&units=imperial`;
@@ -62,3 +66,9 @@ if (typeof output !== 'undefined' && slider !== null){
    output.innerHTML = this.value;
    }
 }
+function calculate_windchill(temp, wind){
+    return (temp <= 50 && wind >= 3)?
+       (35.74 + (0.6215 * temp) - (35.75 * Math.pow(wind,0.16)) 
+       + (0.4275 * temp * Math.pow(wind,0.16))).toFixed(1):"n/a";
+ }
+ 
