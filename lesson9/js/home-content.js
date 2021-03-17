@@ -8,7 +8,8 @@ fetch(requestURL)
     const towns = jsonObject['towns'].filter(
         town => town.name.match(/^(Preston|Fish Haven|Soda Springs)$/)
     );
-    towns.sort();
+    console.table(towns);
+    towns.sort((a,b) => (a.currentPopulation < b.currentPopulation) ? 1 : ((b.currentPopulation < a.currentPopulation) ? -1 : 0));
     const events = []
     towns.forEach(town=>{
         town.events.forEach(event=>events.push(event))
