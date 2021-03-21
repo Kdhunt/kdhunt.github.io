@@ -69,7 +69,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    aspect-ratio: 16 / 9;
 }
 /* icons */
 .icon-envelop:before {
@@ -96,9 +95,7 @@
 .icon-instagram:before {
     content: "\ea92";
 }
-img, input[type="image"], video, embed, iframe, marquee, object, table {
-    aspect-ratio: attr(width) / attr(height);
-  }
+
 /* base elements */
 html {
     background-color: var(--main-color);
@@ -272,6 +269,7 @@ main > .hero_img{
     position: relative;
     position: absolute;
     top: -1rem;
+    right: 1rem;
 }
 .weather_summary{
     width: 100%;
