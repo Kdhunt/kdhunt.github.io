@@ -16,7 +16,7 @@ fetch(requestURL)
         let towncontainer = document.querySelector('.town-cards');
         let cardblock = `
         <div class="card">
-            <img src="images/${town.photo}" alt="${town.name} Idaho" loading="lazy" />
+            <img src="images/${town.photo}" alt="${town.name} Idaho" loading="lazy" width="800" height="" />
             <div>
             <h2>${town.name}</h2>
             <p>${town.motto}</p>

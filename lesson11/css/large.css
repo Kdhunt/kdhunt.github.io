@@ -55,5 +55,7 @@
       .card img{
         max-width: calc(100% - 2rem);
       }
-
+      .community-event{
+        width: 33%;
+      }
 }

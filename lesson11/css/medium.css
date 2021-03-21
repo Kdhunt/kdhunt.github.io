@@ -117,7 +117,7 @@ form label.top textarea{
     padding: var(--gutter-md);
   }
   .community-event{
-    width: 33%;
+    width: 50%;
   }
   section.content-block.hero {
     max-width: 50%;

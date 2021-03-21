@@ -68,6 +68,8 @@
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    aspect-ratio: 16 / 9;
 }
 /* icons */
 .icon-envelop:before {
@@ -94,6 +96,9 @@
 .icon-instagram:before {
     content: "\ea92";
 }
+img, input[type="image"], video, embed, iframe, marquee, object, table {
+    aspect-ratio: attr(width) / attr(height);
+  }
 /* base elements */
 html {
     background-color: var(--main-color);
@@ -448,9 +453,7 @@ form label.top input{
     border-radius: .5rem;
     margin-left: calc(100% - 150px);
 }
-.content-wrapper section{
-    display: block;
-}
+
 .upcoming-events{
     display: flex;
     flex-direction: column;
