@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;1,200;1,300&family=Open+Sans:ital,wght@0,300;0,400;1,700&display=swap');
+@font-face {
+    font-family: 'IcoMoon-Free';
+    src: url('fonts/IcoMoon-Free.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'IcoMoon-Free' !important; /* this important is directly from the icomoon library and is used purpousfully */
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+    /* Enable Ligatures ================ */
+    letter-spacing: 0;
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+.icon-facebook2:before {
+    content: "\ea91";
+}
+.icon-instagram:before {
+    content: "\ea92";
+}
+.icon-spotify:before {
+    content: "\ea94";
+}
+.icon-twitter:before {
+    content: "\ea96";
+}
+:root{
+    --heading-font: 'Josefin Sans', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --main-color: #5899E2;
+    --xprimary: #2e5899E2;
+    --accent-1: #A67F8E;
+    --xaccent-1: #e2A67F8E;
+    --accent-2: #73937E;
+    --xaccent-2: #73937Ee2;
+    --accent-3: #524632;
+    --highlight: #C8963E;
+    --white: #fcfcfc;
+    --black: #2f2f2f;
+    --gray-dark: #2f2f2f;
+    --xgray-dark: #30332E88;
+    --gray-med: #696969;
+    --gray-light: #c7c7c9;
+}
+body{
+    font-family: var(--body-font);
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    color: var(--gray-dark);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--heading-font);
+    margin:0;
+}
+h3{
+    font-weight: 800;
+    margin: 0;
+    color:var(--white);
+    text-transform: uppercase;
+}
+h4{
+    font-size: larger;
+    color:var(--main-color);
+}
+p{
+    margin: 0rem;
+    color:var(--gray-dark);
+}
+a{text-decoration:none;}
+header{
+    background-color: var(--main-color);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    padding: 1rem 1rem;
+}
+header h1{
+    display: none;
+}
+header .logo{
+    max-width:200px;
+}
+nav{
+    background-color: var(--gray-dark);
+    display: none;
+}
+nav.show{
+    display:block;
+}
+nav ul{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+nav ul li a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: x-large;
+    line-height: 2;
+}
+nav ul li a[aria-current="page"]::before{
+    content: '\203A';
+    margin-left: -6px;
+    color: var(--accent-2);
+}
+.weather-alert, .highlight{
+    background-color:var(--highlight);
+    padding: .5rem;
+    position: relative;
+}
+.weather-alert{
+    display:none;
+}
+.weather-alert .event-details{
+    display:none;
+}
+.weather-alert .event-details.view{
+    display: inline;
+}
+.weather-alert.active{
+    display:block;
+}
+.weather-alert .close{
+    position: absolute;
+    padding:0.05rem .3rem;
+    right: .5rem;
+    border: 1px solid var(--gray-dark);
+    border-radius: 50%;
+    font-size: .9em;
+}
+.weather-block{
+    text-align: right;
+}
+
+.weather-block h4{
+    color:var(--gray-dark);
+}
+.weather-block .temp{
+    font-size: 3rem;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+}
+main .hero{
+    position: relative;
+    overflow: hidden;
+}
+main .hero h2{
+    margin:1rem;
+}
+main .hero img{
+   float:right;
+   width: initial;
+
+}
+.nav-toggle-mobile {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    max-width: 2rem;
+}
+.forcast{
+    background-color: var(--accent-2);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+main div h3, section h3{
+    padding: .75rem 1rem .5rem;
+}
+main div p, section:not(.full-width) section div{
+    padding: .5rem 1rem;
+}
+.forcast,.forcast h4{
+    color:var(--white);
+}
+.forcast h3{
+    grid-column: 1/4;
+}
+.forcast .weather-block-wrapper{
+    padding: 0 1rem;
+    display: flex; 
+    justify-content: space-between;
+    
+}
+section h3{
+    background-color: var(--accent-1);
+
+}
+.business-ad .business-block{
+    display: grid;
+    grid-template-columns: 66% 34%;
+
+}
+.business-ad .business-block:nth-child(even){
+    direction: rtl;
+    display: grid;
+    grid-template-columns: 66% 34%;
+}
+.business-ad .business-block div{
+    padding: 1rem;
+}
+.business-ad .business-block img{
+    max-width: 100%;
+}
+
+.highlight button {
+    display: block;
+    background-color: var(--white);
+    border: none;
+    padding: .5rem 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    width: 100%;
+}
+.events .event-block-wrapper{
+    padding: 1rem;
+}
+.events .event-block-wrapper .event-block a{
+    display: block;
+    text-align: right;
+}
+footer{
+    background-color: var(--gray-dark);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+footer img{
+    max-width: 8rem;
+}
+footer a, footer address, footer strong{
+    color: var(--white);
+    line-height: 1.5;
+}
+footer .social{
+    text-align: right;
+    font-size: xx-large;
+    color: var(--main-color);
+    margin-top: 1rem;
+}
+
+/* FORMS */
+form {margin: 0 auto; max-width: 21rem;}
+form fieldset{
+    margin: 0;
+    border-radius: 15px;
+    padding: 0;
+    text-align: Left;
+    max-width: 100%;
+    border: none;
+}
+form legend{
+    margin: 1rem 0 2% 2%;
+    padding: 0.5rem 0;
+}
+
+form label.top, form div{
+    display:block;
+    padding-top:1rem;
+    font-size: 1rem;
+
+}
+form label.top input{
+    width: calc(100% - 12px);
+    max-width: calc(100% - 12px);
+}
+form label.top input, form label.top select{
+    -webkit-appearance: none;
+    display:block;
+    font-size: 1rem;
+    border: solid 1px var(--gray-med);
+    border-radius: 4px;
+    padding: .75rem 0 .75rem 2%;
+    color: var(--gray-dark);
+    width: 100%;
+    max-width: 100%;
+}
+form label.sbs{
+    display:block;
+    padding-top: 1rem;
+    color: var(--gray-dark);
+}
+
+form input.submitbutton{
+  border: none;
+  background-color: var(--highlight);
+  color: white;
+  border-radius: 4px;
+  padding: .75rem 1.5rem;
+  margin: 1rem 0;
+  width:100%;
+  max-width: 100%;
+
+}
+form label.top input[type="range"]{
+  -webkit-appearance: slider-horizontal;
+    width: 100;
+}
+form label.top input[type="radio"]{
+  -moz-appearance: radio;
+  display: inline-block ;
+  max-width: 1rem;
+}
+form label.top textarea{
+  display: block;
+  margin: 0 0 0rem 0%;
+  width: 100%;
+  max-width: calc( 100% - 6px);
+  border-radius: 5px;
+}
+form label.top input{
+  padding-left: 12px;
+  max-width: calc(100% - 14px);
+}
+form label.top input:required{
+    border-left: var(--highlight) solid 6px;
+    padding-left: 6px;
+}
+form label.top input:required:valid{
+    border-left: greenyellow solid 6px;
+}
+form label.top select option:first-child::after{
+  content:  " \25BC";
+  margin-left: -30px;
+  color: var(--accent-3);
+  font-size: 20px;
+}
+
+label{
+    display:block;
+}
+/*join*/
+section.full-width h3{
+    margin-bottom: 1rem;
+}
+section.full-width div.border{
+    padding: 0 1rem;
+}
+section.full-width.business-ad h3{
+    margin-bottom: 0;
+}

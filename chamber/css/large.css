@@ -1,0 +1,35 @@
+@media only screen and (min-width: 78em) {
+    main .business-ad {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    main .business-ad h3{
+        grid-column: 1/-1;
+    }
+    main .business-ad .business-block,.business-ad .business-block:nth-child(even) {
+        grid-template-columns: 1fr;
+        direction: ltr;
+    }
+    main .business-ad .business-block img
+    {
+        width: 100%;
+        height: 250px;
+    }
+    main .events .event-block-wrapper {
+
+        grid-template-columns:repeat(4, 1fr);
+
+    }
+    main .hero p{
+        position: absolute;
+        top: 4rem;
+        font-size: 1.5rem;
+        line-height: 2.2rem;
+        max-width: 50%;
+        font-weight: 300;
+    }
+    /* FORM */
+    form label.sbs{
+        padding: .4rem 0;
+      }
+}

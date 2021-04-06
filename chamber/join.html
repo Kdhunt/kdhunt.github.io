@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<title>City of Thonton Colorado: Chamber of Commerce</title>
+<meta name="description" content="City of Thonton Colorado: Chamber of Commerce">
+<meta name="author" content="Krysta Hunt">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<link rel="stylesheet" href="css/small.css">
+<link rel="stylesheet" href="css/medium.css">
+<link rel="stylesheet" href="css/large.css">
+
+<link rel="preconnect" href="//fonts.gstatic.com">
+<link href="//fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="weather-alert">
+        <strong>Weather Alert:</strong>
+        <span class="event">Severe Thunderstorm Warning</span>
+        <span class="close">X</span>
+    </div>
+    <header>
+        <img class="logo" src="images/logo-header.png">
+        <h1>Department of Economic Development</h1>
+        <div class="weather-block current">
+            
+            <div class="temp"><span class="value">58</span>&deg;</div>
+            <div><span class="description">cloudy</span></div>
+            <div>Humidity: <span class="humidity">35</span>%</div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="city.html">City</a></li>
+            <li><a href="join.html" aria-current="page">Join</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero full-width">
+            <img class="nav-toggle-mobile" src="images/icon-hamburger@2x.png" >
+            <h2>Join Us</h2>
+            <img class="hero" src="images/hero-secondary-thornton-overpass.jpeg">
+            <p></p>
+        </div>
+        <section class="membership-levels full-width">
+            <h3>Membership Levels</h3>
+            <div class="nonprofit border">
+                <h4>Non-Profit</h4>
+                <p><strong>Cost:</strong>$100</p>
+                <p>
+                    The non-profit membership includes the following perks:
+                    <ul>
+                        <li>Inclusion in the directory</li>
+                        <li>preferred registration to business trainings</li> 
+                    </ul>
+                </p>
+            </div>
+            <div class="bronze border">
+                <h4>Bronze</h4>
+                <p><strong>Cost:</strong>$200</p>
+                <p>
+                    The bronze membership includes the following perks:
+                    <ul>
+                        <li>Inclusion in the directory</li>
+                        <li>preferred registration to business trainings</li> 
+                        <li>quarterly media posts</li>
+                        <li>quarterly luncheon tickets</li> 
+                        <li>sponsorships with levels of advertising</li> 
+                    </ul>
+                </p>
+            </div>
+            <div class="silver border">
+                <h4>Silver</h4>
+                <p><strong>Cost:</strong>$400</p>
+                <p>
+                    The silver membership includes the following perks:
+                    <ul>
+                        <li>specialized inclusion in the directory</li>
+                        <li>automatic registration to business trainings</li> 
+                        <li>monthly media posts</li>
+                        <li>monthly luncheon tickets</li> 
+                        <li>enhanced sponsorships with levels of advertising</li> 
+                    </ul>
+                </p>
+            </div>
+            <div class="gold border">
+                <h4>Gold</h4>
+                <p><strong>Cost:</strong>$1000</p>
+                <p>
+                    The gold membership includes the following perks:
+                    <ul>
+                        <li>premium inclusion in the directory</li>
+                        <li>automatic registration to business trainings</li> 
+                        <li>monthly media posts</li>
+                        <li>2 pair of monthly luncheon tickets with vip seating</li> 
+                        <li>premium sponsorships with levels of advertising</li> 
+                    </ul>
+                </p>
+            </div>
+        </section>
+        <section class="signup">
+            <h3>Become a Member</h3>
+            <form method="post" action="thankyou.html">
+                <fieldset>
+                <label class="top" id="fName">First Name: 
+                <input name="firstName" type="text" value="" required />
+                </label>
+                <label class="top" id="lName">Last Name: 
+                <input name="lastName" type="text" value="" required />
+                </label>
+                <label class="top" id="title">Title: 
+                <input name="title" type="text" value="" />
+                </label>
+                <label class="top" id="email">Email: 
+                <input name="email" type="text" value="" required />
+                </label>
+                <label class="top" id="cellphone">Cell Phone: 
+                <input name="cellphone" type="text" value=""  />
+                </label>
+                
+                </fieldset>
+                <fieldset>
+                <label class="top" id="businessName">Business Name: 
+                <input name="businessName" type="text" value="" required />
+                </label>
+                <label class="top" id="businessAddress">Business Address: 
+                <input name="businessAddress" type="text" value=""  />
+                </label>
+                <label  class="top"id="businessWebsite">Business Website: 
+                <input class="top" name="businessWebsite" type="text" value=""  />
+                </label>
+                <label class="top" >
+                    Business description:
+                    <textarea  name="businessDescription" rows="4" cols="39">
+                    </textarea>
+                </label>
+                <label   class="top">
+                                Membership Level
+                                <select name="membership">
+                                    <option value="" selected disabled>Select membership...</option>
+                                    <option value="100">Non-profit ($100)</option>
+                                    <option value="200">Bronze ($200)</option>
+                                    <option value="400">Silver ($400)</option>
+                                    <option value="1000">Gold ($1000)</option>
+                                </select>
+                            </label>
+                </fieldset>
+                <input class="submitbutton" type="submit" value="Become a Member" />
+                </form>
+            </section>
+        <section class="events full-width">
+            <h3>UPCOMING EVENTS:</h2>
+            <div class="event-block-wrapper">
+                <div class="event-block">
+                    <h4>April 8: Qdoba Grand Opening</h4>
+                    <p>Join the new franchise owner in celebrating the 
+                        opening of his first location, first 100 burritos are on 
+                        the house.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div class="event-block">
+                    <h4>April 12: Small Business Tax Workshop</h4>
+                    <p>This will be the last working session of the year 
+                        before final taxes are due. Join us and get 
+                        Free support from local CPAs and Tax Attorneys.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div class="event-block">
+                    <h4>April 23: Business in Crisis Council </h4>
+                    <p>Get tools to help you stay in business.  Business is not 
+                        always easy and our experts can help you figure out 
+                        What changes you can make to turn things around.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div class="event-block">
+                    <h4>April 31: Spring Business Faire</h4>
+                    <p>Join us for the spring business faire. Meet local
+                        business owners and service providers. Don’t miss 
+                        this chance to network with your future partners.</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="address">
+            <img src="images/logo-footer.png" alt="Thornton Colorado Economic Development">
+            <br>
+            <strong>City of Thornton, Economic Development</strong><br>
+            <address>9500 Civic Center Drive Thornton, CO 80229</address>
+        </div>
+        <div class="contact">
+            <div>Phone: <a href="tel:3035587605">303-538-7605</a></div>
+            <div>Email: <a href="mailto:Business@ThorntonCO.gov">Business@ThorntonCO.gov</a></div>
+            <div><a href="">Contact Us</a> or <a href="">Subscribe to eNews</a></div>
+            <a href="attribution.html">Attribution</a>
+            <div>D</div>
+        
+        </div>
+        
+        <div class="social">
+            <a href="https://www.facebook.com/OEDThornton/"><span class="icon icon-facebook2"></span></a>
+            <a href="https://www.instagram.com/cityofthornton/?hl=en"><span class="icon icon-instagram"></span></a>
+            <a href="https://twitter.com/thorntonoed?lang=en"><span class="icon icon-twitter"></span></a>
+        </div>
+    </footer>
+<script src="js/script.js" ></script>
+<script src="js/weatherapi.js" ></script>
+</body>
+</html>
