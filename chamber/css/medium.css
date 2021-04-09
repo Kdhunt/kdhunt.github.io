@@ -95,12 +95,25 @@ form, form fieldset{
   section.history{
     grid-column: 1/5;
 }
-div.demographics{
+section.demographics{
     grid-column: 5/7;
     background-color: var(--accent-2);
+    color: var(--white);
+}
+section.demographics p{
+    color: inherit;
+}
+section.demographics h3{
+    background-color: var(--accent-2);
+}
+section.demographics h4{
+    color: var(--white);
+}
+section.demographics ul{
+    margin-left: 3rem;
 }
 section.landmarks{
-    grid-column: 1/7;
+    grid-column: 1/5;
 }
 section.events{
     grid-column: 1/7;

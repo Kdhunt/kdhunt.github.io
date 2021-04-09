@@ -455,7 +455,11 @@ section.history p {
     padding: .5rem 1rem;
 
 }
-.contact .address > *:not(h3), .contact .contactus > *:not(h3), .contact .contactForm > *:not(h3), .contact .board > *:not(h3){
+.contact .address > *:not(h3), 
+.contact .contactus > *:not(h3), 
+.contact .contactForm > *:not(h3), 
+.contact .board > *:not(h3),
+.demographics > *:not(h3, img){
     padding: .5rem 1rem;
 }
 .contact main > *{
@@ -463,4 +467,16 @@ section.history p {
 }
 .contact main .address iframe{
     max-width: 75%;
+}
+.demographics{
+    grid-column: 5/7;
+    grid-row:2/4;
+}
+.demographics img{
+    max-width: 100%;
+
+}
+main .landmarks {
+    grid-column: 1/5;
+    grid-row:3/4;
 }
