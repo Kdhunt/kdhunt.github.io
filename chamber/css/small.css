@@ -477,11 +477,12 @@ section.history p {
 
 }
 
-.city main .hero, .city main .history, .city main .demographics, .city main .landmarks, .city main .events{
+.city main .history, .city main .demographics, .city main .landmarks, .city main .events{
     width: 100%;
     grid-column: 1/-1;
     text-align: center;
 }
+.city main .hero h2{ text-align: left;}
 .city main section.landmarks .landmark .lImg img{
     max-width: 100%;
 }

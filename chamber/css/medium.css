@@ -92,40 +92,44 @@ form, form fieldset{
   section.signup{
       grid-column: 3/7;
   }
-  section.history{
+  .city main  section.history{
     grid-column: 1/5;
 }
-section.demographics{
+.city main section.demographics{
     grid-column: 5/7;
     background-color: var(--accent-2);
     color: var(--white);
 }
-section.demographics p{
+.city main section.demographics p{
     color: inherit;
 }
-section.demographics h3{
+.city main section.demographics h3{
     background-color: var(--accent-2);
 }
-section.demographics h4{
+.city main section.demographics h4{
     color: var(--white);
 }
-section.demographics ul{
+.city main section.demographics ul{
     margin-left: 3rem;
 }
-section.landmarks{
+.city main section.landmarks{
     grid-column: 1/5;
 }
-section.landmarks .landmark .lImg{
+.city main section.landmarks .landmark .lImg{
     max-width: 66%;
 }
-main .landmarks {
+.city main main .landmarks {
     grid-column: 1/5;
     grid-row:3/4;
 }
-section.landmarks .landmark p{
+.city main section.landmarks .landmark p{
     max-width: 34%;
 }
-section.events{
+.city main section.demographics{
+    grid-column: 5/7;
+    grid-row:2/4;
+}
+.city main section.events{
     grid-column: 1/7;
 }
 div.full-width h2{
@@ -154,8 +158,5 @@ div.full-width h2{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.demographics{
-    grid-column: 5/7;
-    grid-row:2/4;
-}
+
 }
