@@ -32,4 +32,18 @@
     form label.sbs{
         padding: .4rem 0;
       }
+
+      .directory .business-display-wrapper{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .directory .business-display-wrapper.list .businesslisting{
+        display: grid;
+        grid-template-columns: 10rem 10rem 9rem 15rem 8rem 20rem 10rem;    
+    }
+    .directory .business-display-wrapper.list .businesslisting .bImg{
+        width: 10rem;
+    }
+    .bDesc{
+        grid-column: 6/7;
+    }
 }

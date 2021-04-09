@@ -1,0 +1,145 @@
+[
+	{
+		"id":"00001",
+		"media": ".png",
+		"name": "3 Margaritas",
+		"memberSince": "NOVEMBER 19, 2019",
+		"address":"3202 W. 104th Ave., Thornton",
+		"phone":"303-280-0166",
+		"url": "www.3margaritasmex.com",
+		"description":"In Thornton, margarita fans can pick up a frosty (or chilled) favorite—like the following luscious libations: Original Margarita, Blue Margarita or Mango Margarita—at 3202 E. 104th Ave., with or without a salted rim.",
+		"level": "Silver"
+	},
+	{
+		"id":"00002",
+		"media": ".png",
+		"name": "Barnes & Noble",
+		"memberSince": "NOVEMBER 19, 2019",
+		"address":"701 E. 120th Ave., Thornton",
+		"phone":"720-872-2619",
+		"url": "www.bn.com",
+		"description":"Ready to instill a love of reading in your toddler or elementary-school student? What better time to explore what Barnes & Noble in Thornton has to offer the tiniest bookworms in your life?",
+		"level": "Gold"
+	},
+	{
+		"id":"00003",
+		"media": ".jpeg",
+		"name": "The Summit",
+		"memberSince": "MAY 15, 2019",
+		"address":"580 E 144th Ave, Thornton",
+		"phone":"303-254-8888",
+		"url": "playthesummit.com",
+		"description":"Each location of The Summit offers a brand of elevated entertainment in the form of fantastic casual dining (the Crossroads Tavern and Grille is a worthy destination in itself), state-of-the-art laser tag and games, and world-class bowling.",
+		"level": "Bronze"
+	},
+	{
+		"id":"00004",
+		"media": ".png",
+		"name": "Mystic Mountain Distillery Tasting Room",
+		"memberSince": "MAY 15, 2019",
+		"address":"12136 Grant Circle unit b, Thornton",
+		"phone":"303-981-9414",
+		"url": "mmdistillery.com",
+		"description":"At Mystic Mountain, distilling is a four generation passion. From our original Rocky Mountain “Sippin’ Hooch” to today’s full lineup, we’ve always prided ourselves on making the smoothest, highest quality spirits.",
+		"level": "Bronze"
+	},
+	{
+		"id":"00005",
+		"media": ".png",
+		"name": "Adam’s Polishes",
+		"memberSince": "MAY 15, 2019",
+		"address":"8225 N Valley Hwy, Thornton",
+		"phone":"720-473-7100",
+		"url": "adamspiloshes.com",
+		"description":"Adam’s Premium Car Care signature product line includes car wax, sealants, dressings, cleaners, and polishes – all guaranteed to outshine and outlast any product you’ve used on your vehicle. ",
+		"level": "Bronze"
+	},
+	{
+		"id":"00006",
+		"media": ".jpeg",
+		"name": "Crystal Clear Water & Ice",
+		"memberSince": "MAY 13, 2019",
+		"address":"3951 E 120th Ave Unit A",
+		"phone":"303-254-9800",
+		"url": "",
+		"description":"Crystal Clear Water & Ice is an up-and-coming Thornton business. They take local tap water and run it through a rigorous purification system which clears out any remaining impurities, leaving only the highest quality water and ice.",
+		"level": "Bronze"
+	},
+	{
+		"id":"00008",
+		"media": ".png",
+		"name": "Amazon Robotics and Fulfillment Center",
+		"memberSince": "MAY 13, 2019",
+		"address":"14601 Grant st, Thornton",
+		"phone":"720-974-8772",
+		"url": "www.amazon.com",
+		"description":"Seattle-based Amazon.com, Inc, is an American technology company focusing on e-commerce, cloud computing, and artificial intelligence. Founded by Jeff Bezos in 1994, Amazon is now the largest e-commerce marketplace and cloud computing platform in the world. It started out as an online bookstore but later expanded to sell video downloads/streaming, MP3 downloads/streaming, audiobook downloads/streaming, software, video games, electronics, apparel, furniture, food, toys, jewelry, and much more.",
+		"level": "Gold"
+	},
+	{
+		"id":"00009",
+		"media": ".png",
+		"name": "Satire Brewing Company",
+		"memberSince": "MAY 13, 2019",
+		"address":"12136 Grant st, Thornton",
+		"phone":"720-275-0667",
+		"url": "satirebrewingcompany.com",
+		"description":"Welcome to Satire Brewing Company! Satire is Waufle-family- (and a few friends) owned and operated. Over the past 7 years, Todd Waufle brewed nearly 300 batches in the garage and backyard…he’s been accused of having a brewing problem. The home brewing went over so well, they decided to open a brew pub. Satire is a nano-brewery starting out on a small 3-barrel system. Their beers change regularly as they are always trying new things.",
+		"level": "Silver"
+	},
+	{
+		"id":"00011",
+		"media": ".jpeg",
+		"name": "Hearthside Dentistry",
+		"memberSince": "MAY 11, 2018",
+		"address":"16578 Washington st, Thornton",
+		"phone":"303-280-2285",
+		"url": "hearthsidedentistry.com",
+		"description":"Dr. Christina O. McMillon leads our group of gentle and caring dental professionals here in Brighton, Colorado. We have a warm and friendly team of compassionate practitioners working together to provide the highest quality, durable dental care catered specifically to our clients.",
+		"level": "Bronze"
+	},
+	{
+		"id":"00013",
+		"media": ".jpeg",
+		"name": "Center for People with Disabilities",
+		"memberSince": "MAY 9, 2018",
+		"address":"10317 Washington st, Thornton",
+		"phone":"303-790-1390",
+		"url": "cpwd.org",
+		"description":"The Center for People With Disabilities (CPWD) is a cross-disability, nonresidential, nonprofit agency that provides unique services to people with disabilities. Founded in 1977 by Judy Dixon and former Boulder County Commissioner, Homer Page, CPWD’s first focus was to help people with disabilities gain employment. Today, CPWD has five core services areas that offer a comprehensive set of programs and services to meet the current needs of people with disabilities.",
+		"level": "NonProfit"
+	},
+	{
+		"id":"00016",
+		"media": ".png",
+		"name": "Allegro Coffee Company",
+		"memberSince": "JANUARY 8, 2018",
+		"address":"12799 Claude st, Thornton",
+		"phone":"303-444-4844",
+		"url": "allegrocoffee.com",
+		"description":"Grim though it may seem, there was a time when people thought all coffee was the same. It was a time without espresso shops. A time without “Arabica” in the American lexicon. But Jeffrey Cohn, whose grandfather founded coffee giant Superior Coffee, hatched the idea to bring truly superior coffee to the people. His specialty coffee company would sell coffee that—gasp—tasted good. In 1977, his vision became a reality with the establishment of The Brewing Market in Boulder, Colorado.",
+		"level": "Gold"
+	},
+	{
+		"id":"00017",
+		"media": ".jpeg",
+		"name": "Intrex Aerospace",
+		"memberSince": "JANUARY 4, 2018",
+		"address":"12777 Claude ct, Thornton",
+		"phone":"304-665-1154",
+		"url": "intrexcorp.com",
+		"description":"Intrex Aerospace may not be one of the most well-known businesses in Thornton, but it’s arguably one of the most interesting. Since 2013, Intrex has been operating in Thornton, creating a wide array of specialty parts for airplanes, rockets, and even top-secret defense mechanisms.",
+		"level": "Silver"
+	},
+	{
+		"id":"00018",
+		"media": ".webp",
+		"name": "Grandma’s Sweet Tooth",
+		"memberSince": "DECEMBER 22, 2017",
+		"address":"9656 Washington st, Thornton",
+		"phone":"303-450-8686",
+		"url": "grandmasweettooth.com",
+		"description":"One of Thornton’s newest businesses is Grandma’s Sweet Tooth, located in the Lamberston Lakes Shopping Center near Thornton Parkway and Washington Street. Grandma’s specializes in nostalgic candy from the 1920’s to present.",
+		"level": "Bronze"
+	}
+]

@@ -40,6 +40,12 @@
 .icon-twitter:before {
     content: "\ea96";
 }
+.icon-table2::before {
+    content: "\ea71";
+}
+.icon-list::before {
+    content: "\e9ba";
+}
 :root{
     --heading-font: 'Josefin Sans', sans-serif;
     --body-font: 'Open Sans', sans-serif;
@@ -84,6 +90,9 @@ p{
     color:var(--gray-dark);
 }
 a{text-decoration:none;}
+a:hover{
+    color: var(--highlight);
+}
 header{
     background-color: var(--main-color);
     color: var(--white);
@@ -355,9 +364,77 @@ label{
 section.full-width h3{
     margin-bottom: 1rem;
 }
-section.full-width div.border{
+section.full-width div.event,section.full-width div.border{
     padding: 0 1rem;
 }
 section.full-width.business-ad h3{
     margin-bottom: 0;
+}
+section.history p {
+    padding: 1rem;
+}
+.icon{
+    font-size: large;
+}
+.business-display-wrapper .businesslisting{
+    margin: .5rem 0;
+}
+.business-display-wrapper .businesslisting .bImg{
+    width: 100%;
+    max-width: 100%;
+    max-height: 75vw;
+    overflow: hidden;
+    margin-bottom:.5rem;
+}
+.business-display-wrapper .businesslisting .bImg img{
+    max-width: 100%;
+}
+.business-display-wrapper .businesslisting div:not(.bImg){
+    margin: .25rem 1rem;
+}
+.business-display-wrapper .businesslisting .NonProfit{
+    color: var(--accent-1);
+}
+.business-display-wrapper .businesslisting .Bronze{
+    color: var(--accent-3);
+}
+.business-display-wrapper .businesslisting .Silver{
+    color: var(--gray-med);
+}
+.business-display-wrapper .businesslisting .Gold{
+    color: var(--highlight);
+}
+.directory main .hero{
+    min-height: auto;
+}
+.directory main .hero span{
+    padding: 1rem;
+}
+.directory .business-display-wrapper{
+    padding: 1.5rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: row;
+    grid-column: 1/-1;
+}
+.directory .business-display-wrapper .businesslisting{
+    width: 100%;
+    max-width: 100%;
+   
+}
+.directory .business-display-wrapper .businesslisting .bImg {
+    text-align: center;
+}
+.directory .business-display-wrapper.list .businesslisting .bImg {
+    text-align: left;
+}
+.directory .business-display-wrapper .businesslisting .bImg img{
+    max-height: 100px
+}
+.directory .business-display-wrapper.list{
+    grid-template-columns: 100%;
+}
+
+.directory .business-display-wrapper.list .businesslisting{
+    grid-template-columns: 1fr;    
 }

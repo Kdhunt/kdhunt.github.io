@@ -92,4 +92,30 @@ form, form fieldset{
   section.signup{
       grid-column: 3/7;
   }
+  section.history{
+    grid-column: 1/5;
+}
+div.demographics{
+    grid-column: 5/7;
+    background-color: var(--accent-2);
+}
+section.landmarks{
+    grid-column: 1/7;
+}
+section.events{
+    grid-column: 1/7;
+}
+div.full-width h2{
+    margin: 1rem;
+}
+.directory .business-display-wrapper{
+    grid-template-columns: 1fr 1fr;
+}
+.directory .business-display-wrapper.list .businesslisting{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+}
+.bDesc{
+    grid-column: 2/4;
+}
 }

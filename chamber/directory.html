@@ -16,7 +16,7 @@
 <link rel="preconnect" href="//fonts.gstatic.com">
 <link href="//fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="directory">
     <div class="weather-alert">
         <strong>Weather Alert:</strong>
         <span class="event">Severe Thunderstorm Warning</span>
@@ -46,10 +46,24 @@
     <main>
         <div class="hero full-width">
             <img class="nav-toggle-mobile" src="images/icon-hamburger@2x.png" >
-            <h2>Chamber of Commerce</h2>
-            <img class="hero" src="images/hero-secondary-thornton-overpass.jpeg">
+            
+            <h2>Business Directory</h2>
+            <span class="icon icon-table2"></span>
+            <span class="icon icon-list"></span>
         </div>
-        
+            <div class="business-display-wrapper">
+                <!--
+            <div class="businesslisting">
+                <div class="bImg"><img alt="${business.name}" src="images/${business.id}.jpeg" loading="lazy" /></div>
+                <div class="bName"><h4>${business.name}</h4></div>
+                <div class="bPhone">${business.phone}</div>
+                <div class="bUrl">${business.url}</div>
+                <div class="bAddress">${business.address}</div>
+                <div class="bDesc">${business.description}</div>
+                <div class="bLevel ${business.level}">${business.level} Member</div>
+            </div>
+                -->
+            </div>
     </main>
     <footer>
         <div class="address">
@@ -61,9 +75,9 @@
         <div class="contact">
             <div>Phone: <a href="tel:3035587605">303-538-7605</a></div>
             <div>Email: <a href="mailto:Business@ThorntonCO.gov">Business@ThorntonCO.gov</a></div>
-            <div><a href="">Contact Us</a> or <a href="">Subscribe to eNews</a></div>
+            <div><a href="contact.html">Contact Us</a> or <a href="#">Subscribe to eNews</a></div>
             <a href="attribution.html">Attribution</a>
-            <div>D</div>
+            <div class="lastModified"></div>
         
         </div>
         
@@ -75,5 +89,6 @@
     </footer>
 <script src="js/script.js" ></script>
 <script src="js/weatherapi.js" ></script>
+<script src="js/directory.js" ></script>
 </body>
 </html>

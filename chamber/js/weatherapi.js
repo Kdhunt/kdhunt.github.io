@@ -2,10 +2,9 @@ const apiURL = "https://api.openweathermap.org/data/2.5/onecall?lat=39.54&lon=-1
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
 
-
-jsObject.alerts = [
+// temporary injection of alerts sample data to ensure that I could build against it and have the elements display and behave correcctly.
+/*jsObject.alerts = [
   {
     "sender_name": "NWS Tulsa (Eastern Oklahoma)",
     "event": "Heat Advisory",
@@ -13,7 +12,7 @@ jsObject.alerts = [
     "end": 1597366800,
     "description": "...HEAT ADVISORY REMAINS IN EFFECT FROM 1 PM THIS AFTERNOON TO\n8 PM CDT THIS EVENING...\n* WHAT...Heat index values of 105 to 109 degrees expected.\n* WHERE...Creek, Okfuskee, Okmulgee, McIntosh, Pittsburg,\nLatimer, Pushmataha, and Choctaw Counties.\n* WHEN...From 1 PM to 8 PM CDT Thursday.\n* IMPACTS...The combination of hot temperatures and high\nhumidity will combine to create a dangerous situation in which\nheat illnesses are possible."
   }
-];
+];*/
 
     let currentweather = document.querySelector(".weather-block.current");
     currentweather.querySelector(".temp .value").innerHTML = jsObject.current.temp.toFixed(0);
