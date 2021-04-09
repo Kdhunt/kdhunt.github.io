@@ -107,28 +107,28 @@
         </section>
         <section class="signup">
             <h3>Become a Member</h3>
-            <form method="post" action="thankyou.html">
+            <form method="get" action="thankyou.html">
                 <fieldset>
                 <label class="top" id="fName">First Name: 
-                <input name="firstName" type="text" value="" required />
+                <input name="firstName" type="text" value="" pattern=".{3,}" required />
                 </label>
                 <label class="top" id="lName">Last Name: 
-                <input name="lastName" type="text" value="" required />
+                <input name="lastName" type="text" value="" pattern=".{3,}" required />
                 </label>
                 <label class="top" id="title">Title: 
                 <input name="title" type="text" value="" />
                 </label>
                 <label class="top" id="email">Email: 
-                <input name="email" type="text" value="" required />
+                <input name="email" type="text" value="" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
                 </label>
                 <label class="top" id="cellphone">Cell Phone: 
-                <input name="cellphone" type="text" value=""  />
+                <input name="cellphone" type="text" pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' value=""  />
                 </label>
                 
                 </fieldset>
                 <fieldset>
                 <label class="top" id="businessName">Business Name: 
-                <input name="businessName" type="text" value="" required />
+                <input name="businessName" type="text" value="" pattern=".{3,}" required />
                 </label>
                 <label class="top" id="businessAddress">Business Address: 
                 <input name="businessAddress" type="text" value=""  />

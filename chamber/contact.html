@@ -16,7 +16,7 @@
 <link rel="preconnect" href="//fonts.gstatic.com">
 <link href="//fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="contact">
     <div class="weather-alert">
         <strong>Weather Alert:</strong>
         <span class="event">Severe Thunderstorm Warning</span>
@@ -46,10 +46,88 @@
     <main>
         <div class="hero full-width">
             <img class="nav-toggle-mobile" src="images/icon-hamburger@2x.png" >
-            <h2>Chamber of Commerce</h2>
-            <img class="hero" src="images/hero-secondary-thornton-overpass.jpeg">
+            <h2>Contact</h2>
         </div>
-        
+        <section class="address">
+            <h3>Where we are:</h3>
+            <div class="name"><strong>City of Thornton, Economic Development</strong></div>
+            <address>9500 Civic Center Drive Thornton, CO 80229</address>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82668.61694211092!2d-105.00727060587246!3d39.915612935955274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c65534dd3ee71%3A0xcd7854dd18c9f55c!2sThornton%2C%20CO!5e0!3m2!1sen!2sus!4v1617938285371!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section class="contactus">
+            <h3>How to reach us:</h3>
+            <div>Phone: <a href="tel:3035587605">303-538-7605</a></div>
+            <div>Email: <a href="mailto:Business@ThorntonCO.gov">Business@ThorntonCO.gov</a></div>
+            <div><a href="">Contact Us</a> or <a href="">Subscribe to eNews</a></div>
+        </section>
+        <section class="contactForm">
+            <h3>Contact Us</h3>
+            <form method="get" action="thankyou.html">
+                <label class="top" id="name">Name: 
+                    <input name="name" type="text" value="" pattern=".{3,}" required />
+                </label>
+                <label class="top" id="phone">Phone: 
+                    <input name="phone" type="text" value="" pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' required />
+                </label>
+                <label class="top" id="email">Email: 
+                    <input name="phone" type="text" value="" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
+                </label>
+                <label class="top" >
+                    Comment:
+                    <textarea  name="businessDescription" rows="4" cols="39">
+                    </textarea>
+                </label>
+                <input class="submitbutton" type="submit" value="Contact the Chamber" />
+                
+            </form>
+        </section>
+        <section class="board">
+            <h3>Board of Directors</h3>
+            <div class="board-wrapper">
+                <div class="board-member">
+                    <div class="mImg">
+                        <img src="https://spire2017dev.s3.amazonaws.com/uploads/Adam_Spire-Digital_10577.jpg" alt="Adam Hasemeyer">
+                    </div>
+                    <div class="mName">Adam Hasemeyer</div>
+                    <div class="mTitle">CEO, Fintech Ltd</div>
+                </div>
+                <div class="board-member">
+                    <div class="mImg">
+                        <img src="https://spire2017dev.s3.amazonaws.com/uploads/nick-removebg.png" alt="Nick Coppolo">
+                    </div>
+                    <div class="mName">Nick Coppolo</div>
+                    <div class="mTitle">COO, That Channel Thing</div>
+                </div>
+                <div class="board-member">
+                    <div class="mImg">
+                        <img src="https://spire2017dev.s3.amazonaws.com/uploads/Sara_Spire-Digital_09881.jpg" alt="Sara Szynski">
+                    </div>
+                    <div class="mName">Sara Szynski</div>
+                    <div class="mTitle">VP of Operations, Operational Dynamics</div>
+                </div>
+                <div class="board-member">
+                    <div class="mImg">
+                        <img src="https://spire2017dev.s3.amazonaws.com/uploads/Krysta_Spire-Digital_10729.jpg" alt="Krysta Hunt">
+                    </div>
+                    <div class="mName">Krysta Hunt</div>
+                    <div class="mTitle">VP, Technology, TechnoAwesome Corp</div>
+                </div>
+                <div class="board-member">
+                    <div class="mImg">
+                        <img src="https://spire2017dev.s3.amazonaws.com/uploads/Geoff_Spire-Digital_10087.jpg" alt="Geoff Calhoun">
+                    </div>
+                    <div class="mName">Geoff Calhoun</div>
+                    <div class="mTitle">VP of Product Development, Software On Demand</div>
+                </div>
+                <div class="board-member">
+                    <div class="mImg">
+                        <img src="https://spire2017dev.s3.amazonaws.com/uploads/Lance_Spire-Digital_10198.jpg" alt="Lance Smith">
+                    </div>
+                    <div class="mName">Lance Smith</div>
+                    <div class="mTitle">Owner, Lance's Quality Mattresses</div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="address">
@@ -64,8 +142,8 @@
             <div><a href="">Contact Us</a> or <a href="">Subscribe to eNews</a></div>
             <a href="attribution.html">Attribution</a>
             <div class="lastModified"></div>
-        
         </div>
+        
         
         <div class="social">
             <a href="https://www.facebook.com/OEDThornton/"><span class="icon icon-facebook2"></span></a>

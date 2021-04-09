@@ -51,7 +51,7 @@
     --body-font: 'Open Sans', sans-serif;
     --main-color: #2577D3;
     --xprimary: #2e5899E2;
-    --accent-1: #A67F8E;
+    --accent-1: #976A7B;
     --xaccent-1: #e2A67F8E;
     --accent-2: #617D6B;
     --xaccent-2: #73937Ee2;
@@ -379,14 +379,14 @@ section.history p {
 .business-display-wrapper .businesslisting{
     margin: .5rem 0;
 }
-.business-display-wrapper .businesslisting .bImg{
+.business-display-wrapper .businesslisting .bImg, .contact .board .board-member .mImg{
     width: 100%;
     max-width: 100%;
     max-height: 75vw;
     overflow: hidden;
     margin-bottom:.5rem;
 }
-.business-display-wrapper .businesslisting .bImg img{
+.business-display-wrapper .businesslisting .bImg img, .contact .board .board-member .mImg img{
     max-width: 100%;
 }
 .business-display-wrapper .businesslisting div:not(.bImg){
@@ -404,10 +404,10 @@ section.history p {
 .business-display-wrapper .businesslisting .Gold{
     color: var(--highlight);
 }
-.directory main .hero{
+.directory main .hero,.contact main .hero{
     min-height: auto;
 }
-.directory main .hero span{
+.directory main .hero span, .contact main .hero span{
     padding: 1rem;
 }
 .directory .business-display-wrapper{
@@ -437,4 +437,30 @@ section.history p {
 
 .directory .business-display-wrapper.list .businesslisting{
     grid-template-columns: 1fr;    
+}
+.contact .board-wrapper{
+    margin-bottom: 1em;
+}
+.contact .board-member{
+    text-align: center;
+}
+.contact .board-member .mName{
+    font-weight: bolder;
+    font-size: larger;
+    color: var(--main-color);
+    padding: 0 1rem;
+
+}
+.contact .board-member .mtitle{
+    padding: .5rem 1rem;
+
+}
+.contact .address > *:not(h3), .contact .contactus > *:not(h3), .contact .contactForm > *:not(h3), .contact .board > *:not(h3){
+    padding: .5rem 1rem;
+}
+.contact main > *{
+    grid-column: 1/-1;
+}
+.contact main .address iframe{
+    max-width: 75%;
 }

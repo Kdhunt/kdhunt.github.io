@@ -46,4 +46,8 @@
     .bDesc{
         grid-column: 6/7;
     }
+    .contact main .board .board-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
